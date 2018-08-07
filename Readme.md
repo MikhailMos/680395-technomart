@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Михаил](https://up.htmlacademy.ru/htmlcss/22/user/680395).
-* Наставник: [Артём Рудов] (https://htmlacademy.ru/profile/artrudov).
+* Наставник: [Артём Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
 
