@@ -5,8 +5,135 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <h1><a class="main-header-caption">Техномарт</a></h1>
+        <p class="main-navigation-descriptoin">Интернет-магазин строительных материалов и инструментов для ремонта</p>
+        <p class="main-navigation-tel">+7 (812) 555-05-55</p>
+        <p class="main-navigation-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+        <ul class="main-panel">
+          <li><span class="main-panel-search">Поиск</span></li>
+          <li><a class="main-panel-bookmarks" href="#">Закладки: <span class="main-panel-bookmarks-num">0</span></a></li>
+          <li><a class="main-panel-basket" href="#">Корзина: <span class="main-panel-basket-num">0</span></a></li>
+          <li><a class="main-panel-makeorder" href="#">Оформить заказ</a></li>
+        </ul>
+
+        <ul class="user-navigation">
+          <li><a class="login-link" href="#">Войти</a></li>
+          <li><a class="registration-link" href="#">Регистрация</a></li>
+        </ul>
+
+        <ul class="site-navigation">
+          <li class="site-navigation-current"><a>Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="promo-block">
+        <h2 class="visually-hidden">Промо-блок</h2>
+
+        <ul class="promo-list">
+          <li>
+            Материалы<br>
+            <a class="button" href="#">на любой вкус</a>
+          </li>
+          <li>
+            Инструмент<br>
+            <a class="button" href="#">на все случаи</a>
+          </li>
+          <li>
+            Техника<br>
+            <a class="button" href="#">для стройки</a>
+          </li>
+          <li>
+            Скидки 50%<br>
+            <a class="button" href="#">на 350 товаров</a>
+          </li>
+          <li>
+            Доставка<br>
+            <a class="button" href="#">бесплатно</a>
+          </li>
+        </ul>
+
+        <ul class="promo-slider">
+          <li>
+            <img src="http://placehold.it/620x270" width="620" height="270" alt="Дрели">
+            <a class="button" href="catalog.html">Открыть каталог</a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="popular-goods">
+        <h2 class="visually-hidden">Популярные товары</h2>
+        <p>
+          Популярные товары: <a class="button btn-popular-goods" href="#">все популярные товары</a>
+        </p>
+
+        <ul class="goods-list">
+          <li>
+            <a href="#">
+              <h3 class="goods-item-title">Перфоратор Bosch BFG 9000</h3>
+              <img src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 9000">
+            </a>
+            <p class="old-price">32500 р.</p>
+            <p><a class="button current-price" href="#">25500 р.</a></p>
+          </li>
+          <li>
+            <a href="#">
+              <h3 class="goods-item-title">Перфоратор Bosch BFG 3000</h3>
+              <img src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 3000">
+            </a>
+            <p class="old-price">22500 р.</p>
+            <p><a class="button current-price" href="#">15500 р.</a></p>
+          </li>
+          <li>
+            <a href="#">
+              <h3 class="goods-item-title">Перфоратор Bosch BFG 6000</h3>
+              <img src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 6000">
+            </a>
+            <p class="old-price">30500 р.</p>
+            <p><a class="button current-price" href="#">25500 р.</a></p>
+          </li>
+          <li>
+            <a href="#">
+              <h3 class="goods-item-title">Перфоратор Bosch BFG 2000</h3>
+              <img src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 2000">
+            </a>
+            <p class="old-price hidden">12500 р.</p> <!--оставил,чтоб не ломалась сетка-->
+            <p><a class="button current-price" href="#">12500 р.</a></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="pupular-manufacturers">
+        <h2 class="visually-hidden">Популярные производители</h2>
+        <p>
+          Популярные производители: <a class="button btn-popular-goods" href="#">все производители</a>
+        </p>
+
+        <ul class="manufacturers-list">
+          <li><a class="manufacturer-item"><img src="http://placehold.it/220x145" width="220" height="145" alt="Bosch"></a></li>
+          <li><a class="manufacturer-item"><img src="http://placehold.it/220x145" width="220" height="145" alt="Makita"></a></li>
+          <li><a class="manufacturer-item"><img src="http://placehold.it/220x145" width="220" height="145" alt="DeWalt"></a></li>
+          <li><a class="manufacturer-item"><img src="http://placehold.it/220x145" width="220" height="145" alt="Интерскол"></a></li>
+          <li><a class="manufacturer-item"><img src="http://placehold.it/220x145" width="220" height="145" alt="Hitachi"></a></li>
+          <li><a class="manufacturer-item"><img src="http://placehold.it/220x145" width="220" height="145" alt="LG"></a></li>
+          <li><a class="manufacturer-item"><img src="http://placehold.it/220x145" width="220" height="145" alt="AEG Power solutions"></a></li>
+          <li><a class="manufacturer-item"><img src="http://placehold.it/220x145" width="220" height="145" alt="Metabo"></a></li>
+        </ul>
+      </section>
+
+    </main>
+
+
 
   </body>
 </html>
