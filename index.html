@@ -6,31 +6,37 @@
   </head>
   <body>
     <header class="main-header">
-      <nav class="main-navigation">
-        <h1><a class="main-header-caption">Техномарт</a></h1>
+      <section class="main-header-top">
+        <span class="main-panel-search">Поиск</span>
+        <a class="main-panel-bookmarks" href="bookmarks.html">Закладки:
+          <span class="main-panel-bookmarks-num">0</span>
+        </a>
+        <a class="main-panel-basket" href="mybasket.html">Корзина:
+          <span class="main-panel-basket-num">0</span>
+        </a>
+        <a class="main-panel-makeorder" href="issueorder.html">Оформить заказ</a>
+      </section>
+
+      <section class="main-header-middle">
+        <a class="main-header-caption" href="index.html">Техномарт</a>
         <p class="main-navigation-descriptoin">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <p class="main-navigation-tel">+7 (812) 555-05-55</p>
         <p class="main-navigation-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
-        <ul class="main-panel">
-          <li><span class="main-panel-search">Поиск</span></li>
-          <li><a class="main-panel-bookmarks" href="#">Закладки: <span class="main-panel-bookmarks-num">0</span></a></li>
-          <li><a class="main-panel-basket" href="#">Корзина: <span class="main-panel-basket-num">0</span></a></li>
-          <li><a class="main-panel-makeorder" href="#">Оформить заказ</a></li>
-        </ul>
-
         <!--не залогинен-->
-        <ul class="user-navigation-nologin">
-          <li><a class="login-link" href="#">Войти</a></li>
-          <li><a class="registration-link" href="#">Регистрация</a></li>
+        <ul class="user-navigation">
+          <li><a class="login-link" href="login.html">Войти</a></li>
+          <li><a class="registration-link" href="registration.html">Регистрация</a></li>
         </ul>
         <!--залогинен-->
         <ul class="user-navigation-login">
-          <li><a class="logout-link" href="#">Равшан Джумшутович</a></li>
-          <li><a href="#">Мои заказы</a></li>
-          <li><a href="#">Личный кабинет</a></li>
+          <li><a class="logout-link" href="logout.html">Равшан Джумшутович</a></li>
+          <li><a href="myorders.html">Мои заказы</a></li>
+          <li><a href="privatearea.html">Личный кабинет</a></li>
         </ul>
+      </section>
 
+      <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-current"><a>Главная</a></li>
           <li><a href="company.html">Компания</a></li>
@@ -50,32 +56,32 @@
         <ul class="promo-list">
           <li>
             <article class="promo-item new">
-              Материалы<br>
-              <a class="button" href="#">на любой вкус</a>
+              <h3>Материалы</h3>
+              <a class="button" href="materials.html">на любой вкус</a>
             </article>
           </li>
           <li>
             <article class="promo-item">
-              Инструмент<br>
-              <a class="button" href="#">на все случаи</a>
+              <h3>Инструмент</h3>
+              <a class="button" href="tools.html">на все случаи</a>
             </article>
           </li>
           <li>
             <article class="promo-item">
-              Техника<br>
-              <a class="button" href="#">для стройки</a>
+              <h3>Техника</h3>
+              <a class="button" href="equipment.html">для стройки</a>
             </article>
           </li>
           <li>
             <article class="promo-item">
-              Скидки 50%<br>
-              <a class="button" href="#">на 350 товаров</a>
+              <h3>Скидки 50%</h3>
+              <a class="button" href="discount.html">на 350 товаров</a>
             </article>
           </li>
           <li>
             <article class="promo-item">
-              Доставка<br>
-              <a class="button" href="#">бесплатно</a>
+              <h3>Доставка</h3>
+              <a class="button" href="delivery.html">бесплатно</a>
             </article>
           </li>
         </ul>
@@ -91,48 +97,48 @@
       <section class="popular-goods">
         <h2 class="visually-hidden">Популярные товары</h2>
         <p>
-          Популярные товары: <a class="button btn-popular-goods" href="#">все популярные товары</a>
+          Популярные товары: <a class="button btn-popular-goods" href="populargoods.html">все популярные товары</a>
         </p>
 
         <ul class="goods-list">
           <li>
             <article class="goods-item">
-              <a href="#">
+              <a href="BFG9000.html">
                 <h3 class="goods-item-title">Перфоратор Bosch BFG 9000</h3>
                 <img src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 9000">
               </a>
               <p class="old-price">32500 р.</p>
-              <p><a class="button current-price" href="#">25500 р.</a></p>
+              <p class="button current-price">25500 р.</p>
             </article>
           </li>
           <li>
             <article class="goods-item">
-              <a href="#">
+              <a href="BFG3000.html">
                 <h3 class="goods-item-title">Перфоратор Bosch BFG 3000</h3>
                 <img src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 3000">
               </a>
               <p class="old-price">22500 р.</p>
-              <p><a class="button current-price" href="#">15500 р.</a></p>
+              <p class="button current-price">15500 р.</p>
             </article>
           </li>
           <li>
             <article class="goods-item">
-              <a href="#">
+              <a href="BFG6000.html">
                 <h3 class="goods-item-title">Перфоратор Bosch BFG 6000</h3>
                 <img src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 6000">
               </a>
               <p class="old-price">30500 р.</p>
-              <p><a class="button current-price" href="#">25500 р.</a></p>
+              <p class="button current-price">25500 р.</p>
             </article>
           </li>
           <li>
             <article class="goods-item">
-              <a href="#">
+              <a href="BFG2000.html">
                 <h3 class="goods-item-title">Перфоратор Bosch BFG 2000</h3>
                 <img src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 2000">
               </a>
               <p class="old-price hidden">12500 р.</p> <!--оставил,чтоб было ровно-->
-              <p><a class="button current-price" href="#">12500 р.</a></p>
+              <p class="button current-price">12500 р.</p>
             </article>
           </li>
         </ul>
@@ -141,7 +147,7 @@
       <section class="pupular-manufacturers">
         <h2 class="visually-hidden">Популярные производители</h2>
         <p>
-          Популярные производители: <a class="button btn-popular-goods" href="#">все производители</a>
+          Популярные производители: <a class="button btn-popular-goods" href="goods.html">все производители</a>
         </p>
 
         <ul class="manufacturers-list">
@@ -162,7 +168,7 @@
 
         <ul class="service-list">
           <li>
-            <a class="service-item service-item-current" href="#">Доставка</a>
+            <a class="service-item service-item-current" href="delivery.html">Доставка</a>
             <ul class="service-sublist">
               <li>
                 <h3>Доставка</h3>
@@ -171,7 +177,7 @@
             </ul>
           </li>
           <li>
-            <a class="service-item" href="#">Гарантия</a>
+            <a class="service-item" href="service.html">Гарантия</a>
             <ul class="service-sublist">
               <li>
                 <h3>Гарантия</h3>
@@ -180,7 +186,7 @@
             </ul>
           </li>
           <li>
-            <a class="service-item" href="#">Кредит</a>
+            <a class="service-item" href="credit.html">Кредит</a>
             <ul class="service-sublist">
               <li>
                 <h3>Кредит</h3>
@@ -202,16 +208,16 @@
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button" href="#">Подробнее о компании</a>
+          <a class="button" href="moreinfo.html">Подробнее о компании</a>
         </p>
       </section>
 
       <section class="contacts">
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a class="minimap" href="#"><img src="http://placehold.it/300x158" width="300" height="158" alt="Карта"></a>
+        <a class="minimap" href="contacts.html"><img src="http://placehold.it/300x158" width="300" height="158" alt="Карта"></a>
         <p>
-          <a class="button" href="#">Заблудились! Напишите нам!</a>
+          <a class="button" href="feedback.html">Заблудились! Напишите нам!</a>
         </p>
       </section>
     </main>
@@ -221,11 +227,11 @@
         <h2>Техномарт</h2>
 
         <ul class="site-navigation">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="news.html">Новости</a></li>
           <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </section>
 
@@ -236,10 +242,10 @@
         </p>
 
         <ul class="promo-navigation">
-          <li><a class="footer-link" href="#">Материалы</a></li>
-          <li><a class="footer-link" href="#">Техника</a></li>
-          <li><a class="footer-link" href="#">Инструмент</a></li>
-          <li><a class="footer-link" href="#">Спецпредложения</a></li>
+          <li><a class="footer-link" href="materials.html">Материалы</a></li>
+          <li><a class="footer-link" href="equipment.html">Техника</a></li>
+          <li><a class="footer-link" href="tools.html">Инструмент</a></li>
+          <li><a class="footer-link" href="specialoffers.html">Спецпредложения</a></li>
         </ul>
       </section>
 
@@ -257,7 +263,7 @@
 
         <p class="feedback">
           Обратная связь:
-          <a class="footer-link" href="#">mail@htmlacademy.ru</a>
+          <a class="footer-link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
         </p>
         <p class="developedby">
           Разработано - <a class="footer-link" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
