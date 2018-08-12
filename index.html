@@ -19,9 +19,16 @@
           <li><a class="main-panel-makeorder" href="#">Оформить заказ</a></li>
         </ul>
 
-        <ul class="user-navigation">
+        <!--не залогинен-->
+        <ul class="user-navigation-nologin">
           <li><a class="login-link" href="#">Войти</a></li>
           <li><a class="registration-link" href="#">Регистрация</a></li>
+        </ul>
+        <!--залогинен-->
+        <ul class="user-navigation-login">
+          <li><a class="logout-link" href="#">Равшан Джумшутович</a></li>
+          <li><a href="#">Мои заказы</a></li>
+          <li><a href="#">Личный кабинет</a></li>
         </ul>
 
         <ul class="site-navigation">
@@ -131,9 +138,122 @@
         </ul>
       </section>
 
+      <section class="services">
+        <h2>Сервисы</h2>
+        <p class="service-paragraph">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+
+        <ul class="service-list">
+          <li>
+            <a class="service-item service-item-current" href="#">Доставка</a>
+            <ul class="service-sublist">
+              <li>
+                <h3>Доставка</h3>
+                <p>Мы с удовольтвием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="service-item" href="#">Гарантия</a>
+            <ul class="service-sublist">
+              <li>
+                <h3>Гарантия</h3>
+                <p>....</p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="service-item" href="#">Кредит</a>
+            <ul class="service-sublist">
+              <li>
+                <h3>Кредит</h3>
+                <p>....</p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section class="about-us">
+        <h2>Компания "Техномарт"</h2>
+        <p>Настоящий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушным любителей сэкономить на гастарбайтерах.</p>
+        <p>
+          Мы можем доставить ваш товар в самые отдаленные точки России!<br>
+          Техномарт работает со многими транспортными компаниями:
+          <ul class="company-delivery-list">
+            <li>Деловые линии</li>
+            <li>Автотрейдинг</li>
+            <li>ЖелДорЭкспедиция</li>
+          </ul>
+          <a class="button" href="#">Подробнее о компании</a>
+        </p>
+      </section>
+
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <a class="minimap" href="#"><img src="http://placehold.it/300x158" width="300" height="158" alt="Карта"></a>
+        <p>
+          <a class="button" href="#">Заблудились! Напишите нам!</a>
+        </p>
+      </section>
     </main>
 
+    <footer class="main-footer">
+      <section class="footer-line1">
+        <h2>Техномарт</h2>
+        <p>
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7 (812) 555-05-55
+        </p>
 
+        <ul class="site-navigation">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
 
+        <ul class="promo-navigation">
+          <li><a class="footer-link" href="#">Материалы</a></li>
+          <li><a class="footer-link" href="#">Техника</a></li>
+          <li><a class="footer-link" href="#">Инструмент</a></li>
+          <li><a class="footer-link" href="#">Спецпредложения</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-line2">
+        <p class="copyright">
+          2010-2017 Компания "Техномарт"<br>
+          Все права защищены.
+        </p>
+
+        <ul class="socialnet-list">
+          <li class="socialnet-item"><a href="http:\\vk.com">Вконтакте</a></li>
+          <li class="socialnet-item"><a href="http:\\facebook.ru">Файсбук</a></li>
+          <li class="socialnet-item"><a href="http:\\instagram.ru">Инстаграм</a></li>
+        </ul>
+
+        <p class="feedback">
+          Обратная связь:
+          <a class="footer-link" href="#">mail@htmlacademy.ru</a>
+        </p>
+        <p class="developedby">
+          Разработано - <a class="footer-link" href="https:\\htmlacademy.ru">htmlacademy.ru</a>
+        </p>
+      </section>
+    </footer>
+
+    <section class="fullmap">
+      <h2 class="visually-hidden">Полная карта</h2>
+      <!--форма с картой-->
+      <span class="button-close">x</span>
+    </section>
+
+    <section class="write-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <!--тут форма-->
+      <span class="button">Отправить</span>
+    </section>
   </body>
 </html>
