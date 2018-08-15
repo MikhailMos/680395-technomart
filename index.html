@@ -11,11 +11,21 @@
       <section class="main-header-panel">
         <h2 class="visually-hidden">Верхняя панель</h2>
 
-        <span class="main-header-panel-search">Поиск</span>
-        <a class="main-header-panel-bookmarks" href="bookmarks.html">Закладки:
+        <a class="main-logo">
+          <img class="main-logo-picture" src="img/Logo.png" width="110" height="18" alt="Техномарт">
+        </a>
+        <span class="main-header-panel-search">
+          <img class="main-header-panel-search-picture" src="img/icon-search.svg" width="17" height="17" alt="Поиск">
+          Поиск
+        </span>
+        <a class="main-header-panel-bookmarks" href="bookmarks.html">
+          <img class="main-header-panel-bookmarks-picture" src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">
+          Закладки:
           <span class="main-header-panel-bookmarks-num">0</span>
         </a>
-        <a class="main-header-panel-basket" href="mybasket.html">Корзина:
+        <a class="main-header-panel-basket" href="mybasket.html">
+          <img class="main-header-panel-basket-picture" src="img/icon-cart.svg" width="15" height="15" alt="Корзина">
+          Корзина:
           <span class="main-header-panel-basket-num">0</span>
         </a>
         <a class="main-header-panel-makeorder" href="issueorder.html">Оформить заказ</a>
@@ -26,11 +36,19 @@
 
         <a class="main-header-middle-caption" href="index.html">Техномарт</a>
         <p class="main-header-middle-descriptoin">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p class="main-header-middle-tel">+7 (812) 555-05-55</p>
+        <p class="main-header-middle-tel">
+          <img class="main-header-middle-picture" src="img/icon-phone.svg" width="19" height="19" alt="Телефон">
+          +7 (812) 555-05-55
+        </p>
         <p class="main-header-middle-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
         <ul class="user-navigation">
-          <li class="user-navigation-item"><a class="user-navigation-login-link" href="login.html">Войти</a></li>
+          <li class="user-navigation-item">
+            <a class="user-navigation-login-link" href="login.html">
+              <img class="user-navigation-login-picture" src="img/icon-login.svg" width="20" height="17" alt="Вход">
+              Войти
+            </a>
+          </li>
           <li class="user-navigation-item"><a class="user-navigation-registration-link" href="registration.html">Регистрация</a></li>
         </ul>
       </section>
@@ -53,19 +71,29 @@
         <h2 class="visually-hidden">Промо-блок</h2>
 
         <ul class="promo-list">
-          <li class="promo-item">
+          <li class="promo-item new">
               <h3>Материалы</h3>
+              <img class="promo-materials-picture" src="img/icon-1.svg" width="44" height="65" alt="Материалы">
               <a class="button" href="materials.html">на любой вкус</a>
           </li>
           <li class="promo-item">
               <h3>Инструмент</h3>
+              <img class="promo-tools-picture" src="img/icon-2.svg" width="75" height="61" alt="Инструменты">
               <a class="button" href="tools.html">на все случаи</a>
           </li>
           <li class="promo-item">
             <!--слайдер-->
             <ul class="promo-slider-list">
               <li class="promo-slider-item">
-                <img class="promo-slider-picture" src="http://placehold.it/620x270" width="620" height="270" alt="Дрели">
+                <h4 class="promo-slider-header">Дрели</h4>
+                <p class="promo-slider-p">
+                  Соседям на радость!
+                </p>
+
+                <span class="promo-slider-btnleft"><img class="promo-slider-btnleft-picture" src="img/icon-left.svg" width="22" height="40" alt="Влево"></span>
+                <span class="promo-slider-btnright"><img class="promo-slider-btnright-picture" src="img/icon-right.svg" width="22" height="40" alt="Вправо"></span>
+                <!--еще нужно добавить радиобатон иконками-->
+                <img class="promo-slider-picture" src="img/slaid1.jpg" width="620" height="266" alt="Дрели">
                 <a class="button promo-slider-btn-open" href="catalog.html">Открыть каталог</a>
               </li>
             </ul>
@@ -75,14 +103,17 @@
         <ul class="promo-offers-list">
           <li class="promo-offers-item">
               <h3>Техника</h3>
+              <img class="promo-equipment-picture" src="img/icon-3.svg" width="78" height="62" alt="Техника">
               <a class="button" href="equipment.html">для стройки</a>
           </li>
           <li class="promo-offers-item">
               <h3>Скидки 50%</h3>
+              <img class="promo-discount-picture" src="img/icon-4.svg" width="59" height="72" alt="Скидка">
               <a class="button" href="discount.html">на 350 товаров</a>
           </li>
           <li class="promo-offers-item">
               <h3>Доставка</h3>
+              <img class="promo-delyvery-picture" src="img/icon-5.svg" width="78" height="63" alt="Доствка">
               <a class="button" href="delivery.html">бесплатно</a>
           </li>
         </ul>
@@ -99,7 +130,7 @@
             <article class="goods-item-card">
               <a class="goods-item-link" href="BFG9000.html">
                 <h3 class="goods-item-title">Перфоратор Bosch BFG 9000</h3>
-                <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 9000">
+                <img class="goods-item-picture" src="img/bfg9000.png" width="215" height="140" alt="Перфоратор Bosch BFG 9000">
               </a>
               <p class="goods-item-price-old"><del class="price-old-del">32500 р.</del></p>
               <p class="goods-item-price-current">25500 р.</p>
@@ -109,7 +140,7 @@
             <article class="goods-item-card">
               <a class="goods-item-link" href="BFG3000.html">
                 <h3 class="goods-item-title">Перфоратор Bosch BFG 3000</h3>
-                <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 3000">
+                <img class="goods-item-picture" src="img/bfg3000.png" width="215" height="140" alt="Перфоратор Bosch BFG 3000">
               </a>
               <p class="goods-item-price-old"><del class="price-old-del">22500 р.</del></p>
               <p class="goods-item-price-current">15500 р.</p>
@@ -119,7 +150,7 @@
             <article class="goods-item-card">
               <a class="goods-item-link" href="BFG6000.html">
                 <h3 class="goods-item-title">Перфоратор Bosch BFG 6000</h3>
-                <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 6000">
+                <img class="goods-item-picture" src="img/bfg6000.png" width="215" height="140" alt="Перфоратор Bosch BFG 6000">
               </a>
               <p class="goods-item-price-old"><del class="price-old-del">30500 р.</del></p>
               <p class="goods-item-price-current">25500 р.</p>
@@ -129,7 +160,7 @@
             <article class="goods-item-card new">
               <a class="goods-item-link" href="BFG2000.html">
                 <h3 class="goods-item-title">Перфоратор Bosch BFG 2000</h3>
-                <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 2000">
+                <img class="goods-item-picture" src="img/bfg2000.png" width="215" height="140" alt="Перфоратор Bosch BFG 2000">
               </a>
               <p class="goods-item-price-old hidden">12500 р.</p> <!--оставил,чтоб было ровно-->
               <p class="goods-item-price-current">12500 р.</p>
@@ -145,14 +176,14 @@
         </p>
 
         <ul class="manufacturers-list">
-          <li class="manufacturers-item"><img class="manufacturers-picture" src="http://placehold.it/220x145" width="220" height="145" alt="Bosch"></li>
-          <li class="manufacturers-item"><img class="manufacturers-picture" src="http://placehold.it/220x145" width="220" height="145" alt="Makita"></li>
-          <li class="manufacturers-item"><img class="manufacturers-picture" src="http://placehold.it/220x145" width="220" height="145" alt="DeWalt"></li>
-          <li class="manufacturers-item"><img class="manufacturers-picture" src="http://placehold.it/220x145" width="220" height="145" alt="Интерскол"></li>
-          <li class="manufacturers-item"><img class="manufacturers-picture" src="http://placehold.it/220x145" width="220" height="145" alt="Hitachi"></li>
-          <li class="manufacturers-item"><img class="manufacturers-picture" src="http://placehold.it/220x145" width="220" height="145" alt="LG"></li>
-          <li class="manufacturers-item"><img class="manufacturers-picture" src="http://placehold.it/220x145" width="220" height="145" alt="AEG Power solutions"></li>
-          <li class="manufacturers-item"><img class="manufacturers-picture" src="http://placehold.it/220x145" width="220" height="145" alt="Metabo"></li>
+          <li class="manufacturers-item"><img class="manufacturers-picture" src="img/bosch.png" width="126" height="37" alt="Bosch"></li>
+          <li class="manufacturers-item"><img class="manufacturers-picture" src="img/Makita.png" width="123" height="40" alt="Makita"></li>
+          <li class="manufacturers-item"><img class="manufacturers-picture" src="img/DeWALT.png" width="146" height="44" alt="DeWalt"></li>
+          <li class="manufacturers-item"><img class="manufacturers-picture" src="img/Интерскол.png" width="184" height="32" alt="Интерскол"></li>
+          <li class="manufacturers-item"><img class="manufacturers-picture" src="img/Hitachi.png" width="169" height="31" alt="Hitachi"></li>
+          <li class="manufacturers-item"><img class="manufacturers-picture" src="img/LG.png" width="121" height="73" alt="LG"></li>
+          <li class="manufacturers-item"><img class="manufacturers-picture" src="img/AEG.png" width="151" height="96" alt="AEG Power solutions"></li>
+          <li class="manufacturers-item"><img class="manufacturers-picture" src="img/Metabo.png" width="204" height="69" alt="Metabo"></li>
         </ul>
       </section>
 
@@ -167,6 +198,7 @@
               <li class="service-sublist-item">
                 <h3>Доставка</h3>
                 <p class="service-sublist-item-p">Мы с удовольтвием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                <img class="service-sublist-background-picture" src="img/picture-delivery.png" width="468" height="261" alt="Доставка">
               </li>
             </ul>
           </li>
@@ -211,7 +243,7 @@
       <section class="contacts">
         <h2>Контакты</h2>
         <p class="contacts-p">Вы можете забрать товар сами, заехав в наш офис:</p>
-        <a class="contacts-map-link" href="contacts.html"><img class="contacts-map-picture" src="http://placehold.it/300x158" width="300" height="158" alt="Карта"></a>
+        <a class="contacts-map-link" href="contacts.html"><img class="contacts-map-picture" src="img/map-mini.png" width="300" height="158" alt="Карта"></a>
         <p class="contacts-p-btn">
           <a class="button contacts-btn" href="feedback.html">Заблудились! Напишите нам!</a>
         </p>
@@ -221,6 +253,8 @@
     <footer class="main-footer">
         <section class="footer-top">
           <h2>Техномарт</h2>
+
+          <img class="main-logo-picture" src="img/Logo.png" width="110" height="18" alt="Техномарт">
 
           <ul class="footer-top-nav-list site-navigation">
             <li class="footer-top-nav-item site-navigation-item"><a class="site-navigation-link" href="company.html">Компания</a></li>
@@ -256,9 +290,9 @@
           </p>
 
           <ul class="social-list">
-            <li class="social-item"><a class="social-link" href="https://vk.com">Вконтакте</a></li>
-            <li class="social-item"><a class="social-link" href="http://facebook.ru">Файсбук</a></li>
-            <li class="social-item"><a class="social-link" href="http://instagram.ru">Инстаграм</a></li>
+            <li class="social-item"><a class="social-link" href="https://vk.com"><img class="social-picture" src="img/icon-vk.svg" width="26" height="15" alt="ВКонтакте"></a></li>
+            <li class="social-item"><a class="social-link" href="http://facebook.ru"><img class="social-picture" src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a></li>
+            <li class="social-item"><a class="social-link" href="http://instagram.ru"><img class="social-picture" src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a></li>
           </ul>
 
           <p class="feedback">
