@@ -11,8 +11,16 @@
       <section class="main-header-panel">
         <h2 class="visually-hidden">Верхняя панель</h2>
 
-        <span class="main-header-panel-search">Поиск</span>
-        <a class="main-header-panel-bookmarks" href="bookmarks.html">Закладки:
+        <a class="main-logo" href="index.html">
+          <img class="main-logo-picture" src="img/Logo.png" width="110" height="18" alt="Техномарт">
+        </a>
+        <span class="main-header-panel-search">
+            <img class="main-header-panel-search-picture" src="img/icon-search.svg" width="17" height="17" alt="Поиск">
+            Поиск
+        </span>
+        <a class="main-header-panel-bookmarks" href="bookmarks.html">
+          <img class="main-header-panel-bookmarks-picture" src="img/icon-bookmark.svg" width="14" height="16" alt="Закладки">
+          Закладки:
           <span class="main-header-panel-bookmarks-num">0</span>
         </a>
         <a class="main-header-panel-basket" href="mybasket.html">Корзина:
@@ -26,11 +34,20 @@
 
         <a class="main-header-middle-caption" href="index.html">Техномарт</a>
         <p class="main-header-middle-descriptoin">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-        <p class="main-header-middle-tel">+7 (812) 555-05-55</p>
+        <p class="main-header-middle-tel">
+            <img class="main-header-middle-picture" src="img/icon-phone.svg" width="19" height="19" alt="Телефон">
+          +7 (812) 555-05-55
+        </p>
         <p class="main-header-middle-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 
         <ul class="user-navigation-login">
-          <li class="user-navigation-item"><a class="user-navigation-logout-link" href="logout.html">Равшан Джумшутович</a></li>
+          <li class="user-navigation-item">
+            <a class="user-navigation-logout-link" href="logout.html">
+              <img class="user-navigation-icon-user" src="img/icon-user.svg" width="20" height="18" alt="Пользователь">
+              Равшан Джумшутович
+              <img class="user-navigation-icon-loguot" src="img/icon-logout.svg" width="20" height="17" alt="Выход">
+            </a>
+          </li>
           <li class="user-navigation-item"><a class="user-navigation-orders" href="myorders.html">Мои заказы</a></li>
           <li class="user-navigation-item"><a class="user-navigation-privatearea" href="privatearea.html">Личный кабинет</a></li>
         </ul>
@@ -53,9 +70,22 @@
         <h1 class="visually-hidden">Каталог товаров</h1>
 
         <ul class="breadcrumps">
-          <li class="breadcrumps-item"><a class="breadcrumps-link" href="index.html">Главная</a></li>
+          <li class="breadcrumps-item">
+            <a class="breadcrumps-link" href="index.html">
+              <img class="breadcrumps-icon-home" src="img/icon-home.svg" width="14" height="12" alt="Главная">
+            </a>
+          </li>
+          <li class="breadcrumps-item breadcrumps-right">
+            <img class="breadcrump-right-icon" src="img/icon-right-small.svg" width="8" height="12" alt=">">
+          </li>
           <li class="breadcrumps-item"><a class="breadcrumps-link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumps-item breadcrumps-right">
+              <img class="breadcrump-right-icon" src="img/icon-right-small.svg" width="8" height="12" alt=">">
+            </li>
           <li class="breadcrumps-item"><a class="breadcrumps-link" href="tools.html">Инструмент</a></li>
+          <li class="breadcrumps-item breadcrumps-right">
+              <img class="breadcrump-right-icon" src="img/icon-right-small.svg" width="8" height="12" alt=">">
+            </li>
           <li class="breadcrumps-item breadcrumps-current">Перфораторы</li>
         </ul>
 
@@ -91,8 +121,16 @@
               <li class="sort-item sort-item-current"><span class="sort-link-by-price">по цене</span></li>
               <li class="sort-item"><span class="sort-link-by-type">по типу</span></li>
               <li class="sort-item"><span class="sort-link-by-functions">по функционалу</span></li>
-              <li class="sort-item"><a class="sort-link-triangleup"></a></li>
-              <li class="sort-item"><a class="sort-link-triangledown"></a></li>
+              <li class="sort-item">
+                <a class="sort-link-triangleup" href="/catalog.html?ordered=asc">
+                  <img class="sort-triangleup-icon" src="img/icon-up-dir.svg" width="11" height="10" alt="Вверх">
+                </a>
+              </li>
+              <li class="sort-item">
+                <a class="sort-link-triangledown" href="/catalog.html?ordered=desc">
+                    <img class="sort-triangledown-icon" src="img/icon-down-dir.svg" width="11" height="10" alt="Вниз">
+                </a>
+              </li>
             </ul>
           </p>
         </section>
@@ -105,7 +143,7 @@
               <article class="goods-item-card">
                 <a class="goods-item-link" href="BFG3000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 3000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 3000">
+                  <img class="goods-item-picture" src="img/bfg3000.png" width="215" height="140" alt="Перфоратор Bosch BFG 3000">
                 </a>
                 <p class="goods-item-price-old"><del class="price-old-del">22500 р.</del></p>
                 <p class="goods-item-price-current">15500 р.</p>
@@ -119,7 +157,7 @@
               <article class="goods-item-card">
                 <a class="goods-item-link" href="BFG6000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 6000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 6000">
+                  <img class="goods-item-picture" src="img/bfg6000.png" width="215" height="140" alt="Перфоратор Bosch BFG 6000">
                 </a>
                 <p class="goods-item-price-old"><del class="price-old-del">30500 р.</del></p>
                 <p class="goods-item-price-current">25500 р.</p>
@@ -133,7 +171,7 @@
               <article class="goods-item-card new">
                 <a class="goods-item-link" href="BFG2000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 2000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 2000">
+                  <img class="goods-item-picture" src="img/bfg2000.png" width="215" height="140" alt="Перфоратор Bosch BFG 2000">
                 </a>
                 <p class="goods-item-price-old hidden"><del class="price-old-del">12500 р.</del></p> <!--оставил,чтоб разметка была ровной-->
                 <p class="goods-item-price-current">12500 р.</p>
@@ -147,7 +185,7 @@
               <article class="goods-item-card">
                 <a class="goods-item-link" href="BFG3000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 3000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 3000">
+                  <img class="goods-item-picture" src="img/bfg3000.png" width="215" height="140" alt="Перфоратор Bosch BFG 3000">
                 </a>
                 <p class="goods-item-price-old"><del class="price-old-del">22500 р.</del></p>
                 <p class="goods-item-price-current">15500 р.</p>
@@ -161,7 +199,7 @@
               <article class="goods-item-card new">
                 <a class="goods-item-link" href="BFG6000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 6000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 6000">
+                  <img class="goods-item-picture" src="img/bfg6000.png" width="215" height="140" alt="Перфоратор Bosch BFG 6000">
                 </a>
                 <p class="goods-item-price-old"><del class="price-old-del">30500 р.</del></p>
                 <p class="goods-item-price-current">25500 р.</p>
@@ -175,7 +213,7 @@
               <article class="goods-item-card">
                 <a class="goods-item-link" href="BFG2000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 2000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 2000">
+                  <img class="goods-item-picture" src="img/bfg2000.png" width="215" height="140" alt="Перфоратор Bosch BFG 2000">
                 </a>
                 <p class="goods-item-price-old hidden"><del class="price-old-del">12500 р.</del></p> <!--оставил,чтоб разметка была ровной-->
                 <p class="goods-item-price-current">12500 р.</p>
@@ -189,7 +227,7 @@
               <article class="goods-item-card new">
                 <a class="goods-item-link" href="BFG3000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 3000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 3000">
+                  <img class="goods-item-picture" src="img/bfg3000.png" width="215" height="140" alt="Перфоратор Bosch BFG 3000">
                 </a>
                 <p class="goods-item-price-old"><del class="price-old-del">22500 р.</del></p>
                 <p class="goods-item-price-current">15500 р.</p>
@@ -203,7 +241,7 @@
               <article class="goods-item-card">
                 <a class="goods-item-link" href="BFG6000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 6000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 6000">
+                  <img class="goods-item-picture" src="img/bfg6000.png" width="215" height="140" alt="Перфоратор Bosch BFG 6000">
                 </a>
                 <p class="goods-item-price-old"><del class="price-old-del">30500 р.</del></p>
                 <p class="goods-item-price-current">25500 р.</p>
@@ -217,7 +255,7 @@
               <article class="goods-item-card">
                 <a class="goods-item-link" href="BFG2000.html">
                   <h3 class="goods-item-title">Перфоратор Bosch BFG 2000</h3>
-                  <img class="goods-item-picture" src="http://placehold.it/220x150" width="220" height="150" alt="Перфоратор Bosch BFG 2000">
+                  <img class="goods-item-picture" src="img/bfg2000.png" width="215" height="140" alt="Перфоратор Bosch BFG 2000">
                 </a>
                 <p class="goods-item-price-old hidden"><del class="price-old-del">12500 р.</del></p> <!--оставил,чтоб было ровненько-->
                 <p class="goods-item-price-current">12500 р.</p>
@@ -257,6 +295,8 @@
         <section class="footer-top">
           <h2>Техномарт</h2>
 
+          <img class="main-logo-picture" src="img/Logo.png" width="110" height="18" alt="Техномарт">
+
           <ul class="footer-top-nav-list site-navigation">
             <li class="footer-top-nav-item site-navigation-item"><a class="site-navigation-link" href="company.html">Компания</a></li>
             <li class="footer-top-nav-item site-navigation-item"><a class="site-navigation-link" href="news.html">Новости</a></li>
@@ -285,15 +325,15 @@
         <section class="footer-bottom">
           <h2 class="visually-hidden">Нижняя часть подвала</h2>
 
-          <p class="copyright">
+          <p class="copyright" aria-label="Копирайт">
             2010-2017 Компания "Техномарт"<br>
             Все права защищены.
           </p>
 
-          <ul class="social-list">
-            <li class="social-item"><a class="social-link" href="https://vk.com">Вконтакте</a></li>
-            <li class="social-item"><a class="social-link" href="http://facebook.ru">Файсбук</a></li>
-            <li class="social-item"><a class="social-link" href="http://instagram.ru">Инстаграм</a></li>
+          <ul class="social-list" aria-label="Ссылки на соцсети">
+            <li class="social-item"><a class="social-link" href="https://vk.com"><img class="social-picture" src="img/icon-vk.svg" width="26" height="15" alt="ВКонтакте"></a></li>
+            <li class="social-item"><a class="social-link" href="http://facebook.ru"><img class="social-picture" src="img/icon-fb.svg" width="12" height="22" alt="Фейсбук"></a></li>
+            <li class="social-item"><a class="social-link" href="http://instagram.ru"><img class="social-picture" src="img/icon-insta.svg" width="21" height="21" alt="Инстаграм"></a></li>
           </ul>
 
           <p class="feedback">
