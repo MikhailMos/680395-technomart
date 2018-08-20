@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <title>Техномарт: каталог</title>
   </head>
-  <body>
+  <body class="inner-page">
     <h1 class="visually-hidden">Техномарт - интернет-магазин стоительных материалов и инструментов для ремонта</h1>
 
     <header class="main-header">
@@ -77,6 +77,15 @@
           <form class="filtres-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-by-price">
               <legend>Цена:</legend>
+              <!--ползунок с двумя бегунками-->
+              <!-- стилизовать при помощи css --
+                <div class="range-body">
+                  <div class="range-scale">
+                    <span class="range-sliders range-slider-min"></span>
+                    <span class="range-sliders range-slider-max"></span>
+                  </div>
+                </div>
+              -->
               <input type="range" name="range-max" min="0" max="40000" value="30000" step="10">
               <p class="price-min-max-number">
                 <input type="number" size="6" name="price-min" value="0" aria-label="Минимальня цена">
@@ -149,10 +158,10 @@
               <li class="sort-item"><a class="sort-link-by-type" href="#">по типу</a></li>
               <li class="sort-item"><a class="sort-link-by-functions" href="#">по функционалу</a></li>
               <li class="sort-item">
-                <a class="sort-link-triangleup sort-item-current" href="/catalog.html?ordered=desc">/\</a>
+                <a class="arrow sort-link-arrowup sort-item-current" href="/catalog.html?ordered=desc">Сортировать по возрастанию</a>
               </li>
               <li class="sort-item">
-                <a class="sort-link-triangledown" href="/catalog.html?ordered=asc">\/</a>
+                <a class="arrow sort-link-arrodown" href="/catalog.html?ordered=asc">Сортировать по убыванию</a>
               </li>
             </ul>
           </p>
@@ -369,7 +378,7 @@
         </section>
       </footer>
 
-      <section class="write-us">
+      <section class="modal write-us">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="write-us-form" method="POST" action="https://echo.htmlacademy.ru">
           <label class="write-us-name" for="userNameField">Ваше имя:</label>
@@ -386,7 +395,7 @@
         </form>
       </section>
 
-      <section class="order-info">
+      <section class="modal order-info">
         <h2 class="visually-hidden">Информация о заказе</h2>
         <p class="order-info-p">Товар добавлен в корзину!</p>
         <p class="order-info-buttons">
