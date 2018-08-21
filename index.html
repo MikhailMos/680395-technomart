@@ -11,9 +11,11 @@
       <section class="main-header-panel">
         <h2 class="visually-hidden">Верхняя панель</h2>
 
-        <a class="main-logo">Техномарт</a>
-        <label for="panel-serch-field" class="visually-hidden main-header-panel-label">Поиск:</label>
-        <input type="text" class="main-header-panel-search-input" name="panel-serch" id="panel-serch-field" placeholder="Поиск:">
+        <a class="main-logo"><img class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
+        <form class="serch-form">
+          <label for="serch-field" class="visually-hidden serch-label">Поиск:</label>
+          <input type="text" class="search-input" name="panel-serch" id="serch-field" placeholder="Поиск:">
+        </form>
         <a class="main-header-panel-bookmarks" href="bookmarks.html">
           Закладки:
           <span class="main-header-panel-bookmarks-num">0</span>
@@ -319,7 +321,7 @@
       <h2 class="visually-hidden">Полная карта</h2>
       <form class="fullmap-form">
         <img class="fullmap-picture" src="img/map-big.jpg" alt="Полная карта с указанием адреса: ул. Большаяя Конюшенная 19">
-        <button type="button" class="button-close fullmap-btn-close"><span class="visually-hidden">Закрыть</span></button>
+        <button type="button" name="btn-close" class="button-close fullmap-btn-close"><span class="visually-hidden">Закрыть</span></button>
       </form>
     </section>
 
@@ -333,10 +335,10 @@
         <input type="email" name="userEmail" id="userEmailField" placeholder="Ваш e-mail">
 
         <label class="write-us-letter" for="letterField">Текст письма:</label>
-        <textarea class="text-of-letter" id="letterField" cols="50" rows="8" placeholder="В свободной форме"></textarea>
+        <textarea name="content-of-letter" class="text-of-letter" id="letterField" cols="50" rows="8" placeholder="В свободной форме"></textarea>
 
-        <button type="submit" class="button write-us-btn-send">Отправить</button>
-        <button type="button" class="button-close write-us-btn-close"><span class="visually-hidden">Закрыть</span></button>
+        <button type="submit" name="btn-send" class="button write-us-btn-send">Отправить</button>
+        <button type="button" name="btn-close" class="button-close write-us-btn-close"><span class="visually-hidden">Закрыть</span></button>
       </form>
     </section>
   </body>
