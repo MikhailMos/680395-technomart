@@ -11,9 +11,11 @@
       <section class="main-header-panel">
         <h2 class="visually-hidden">Верхняя панель</h2>
 
-        <a class="main-logo" href="index.html">Техномарт</a>
-        <label for="panel-serch-field" class="visually-hidden main-header-panel-label">Поиск:</label>
-        <input type="text" class="main-header-panel-search-input" name="panel-serch" id="panel-serch-field" placeholder="Поиск:">
+        <a class="main-logo"><img class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
+        <form class="serch-form">
+          <label for="serch-field" class="visually-hidden serch-label">Поиск:</label>
+          <input type="text" class="search-input" name="panel-serch" id="serch-field" placeholder="Поиск:">
+        </form>
         <a class="main-header-panel-bookmarks" href="bookmarks.html">
           Закладки:
           <span class="main-header-panel-bookmarks-num">0</span>
@@ -78,15 +80,14 @@
             <fieldset class="filter-by-price">
               <legend>Цена:</legend>
               <!--ползунок с двумя бегунками-->
-              <!-- стилизовать при помощи css --
+
                 <div class="range-body">
                   <div class="range-scale">
                     <span class="range-sliders range-slider-min"></span>
                     <span class="range-sliders range-slider-max"></span>
                   </div>
                 </div>
-              -->
-              <input type="range" name="range-max" min="0" max="40000" value="30000" step="10">
+
               <p class="price-min-max-number">
                 <input type="number" size="6" name="price-min" value="0" aria-label="Минимальня цена">
                 -
@@ -144,7 +145,7 @@
               </ul>
             </fieldset>
 
-            <button type="button" class="button btn-show">Показать</button>
+            <button type="submit" name="filter-btn-show" class="button btn-show">Показать</button>
           </form>
         </section>
 
@@ -158,10 +159,10 @@
               <li class="sort-item"><a class="sort-link-by-type" href="#">по типу</a></li>
               <li class="sort-item"><a class="sort-link-by-functions" href="#">по функционалу</a></li>
               <li class="sort-item">
-                <a class="arrow sort-link-arrowup sort-item-current" href="/catalog.html?ordered=desc">Сортировать по возрастанию</a>
+                <a class="arrow sort-link-arrowup sort-item-current" href="/catalog.html?ordered=desc"><span class="visually-hidden">Сортировать по возрастанию</span></a>
               </li>
               <li class="sort-item">
-                <a class="arrow sort-link-arrodown" href="/catalog.html?ordered=asc">Сортировать по убыванию</a>
+                <a class="arrow sort-link-arrodown" href="/catalog.html?ordered=asc"><span class="visually-hidden">Сортировать по убыванию</span></a>
               </li>
             </ul>
           </p>
@@ -181,7 +182,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">15500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -195,7 +196,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">25500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -209,7 +210,7 @@
                 <p class="goods-item-price-current">12500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -223,7 +224,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">15500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -237,7 +238,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">25500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -251,7 +252,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">12500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -265,7 +266,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">15500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -279,7 +280,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">25500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -293,7 +294,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">12500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <button type="button" class="button goods-item-btn-inbookmarks">В закладки</button>
+                  <a class="button goods-item-btn-inbookmarks">В закладки</a>
                 </p>
               </article>
             </li>
@@ -388,10 +389,10 @@
           <input type="email" name="userEmail" id="userEmailField" placeholder="Ваш e-mail">
 
           <label class="write-us-letter" for="letterField">Текст письма:</label>
-          <textarea class="text-of-letter" id="letterField" cols="50" rows="8" placeholder="В свободной форме"></textarea>
+          <textarea name="content-of-letter" class="text-of-letter" id="letterField" cols="50" rows="8" placeholder="В свободной форме"></textarea>
 
-          <button type="submit" class="button write-us-btn-send">Отправить</button>
-          <button type="button" class="button-close write-us-btn-close"><span class="visually-hidden">Закрыть</span></button>
+          <button type="submit" name="btn-send" class="button write-us-btn-send">Отправить</button>
+          <button type="button" name="btn-close" class="button-close write-us-btn-close"><span class="visually-hidden">Закрыть</span></button>
         </form>
       </section>
 
@@ -400,8 +401,8 @@
         <p class="order-info-p">Товар добавлен в корзину!</p>
         <p class="order-info-buttons">
           <a class="button order-info-btn-issueorder" href="issueorder.html">Оформить заказ</a>
-          <button type="button" class="button order-info-btn-continue">Продолжить покупки</button>
-          <button type="button" class="button-close order-info-btn-close"><span class="visually-hidden">Закрыть</span></button>
+          <button type="button" name="continuetobay" class="button order-info-btn-continue">Продолжить покупки</button>
+          <button type="button" name="btn-close" class="button-close order-info-btn-close"><span class="visually-hidden">Закрыть</span></button>
         </p>
       </section>
   </body>
