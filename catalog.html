@@ -12,7 +12,7 @@
         <h2 class="visually-hidden">Верхняя панель</h2>
 
         <a class="main-logo" href="index.html"><img class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
-        <form class="serch-form">
+        <form class="serch-form" action="https://echo.htmlacademy.ru" method="get">
           <label for="serch-field" class="visually-hidden serch-label">Поиск:</label>
           <input type="text" class="search-input" name="panel-serch" id="serch-field" placeholder="Поиск:">
         </form>
@@ -89,9 +89,9 @@
                 </div>
 
               <p class="price-min-max-number">
-                <input type="number" size="6" name="price-min" value="0" aria-label="Минимальня цена">
+                <input type="text" size="6" name="price-min" value="0" aria-label="Минимальня цена">
                 -
-                <input type="number" size="6" name="price-max" value="30000" aria-label="Максимальная цена">
+                <input type="text" size="6" name="price-max" value="30000" aria-label="Максимальная цена">
               </p>
             </fieldset>
 
@@ -402,7 +402,7 @@
         <p class="order-info-p">Товар добавлен в корзину!</p>
         <p class="order-info-buttons">
           <a class="button order-info-btn-issueorder" href="issueorder.html">Оформить заказ</a>
-          <button type="button" name="continuetobay" class="button order-info-btn-continue">Продолжить покупки</button>
+          <a name="continuetobay" class="button order-info-btn-continue">Продолжить покупки</a>
           <button type="button" name="btn-close" class="button-close order-info-btn-close"><span class="visually-hidden">Закрыть</span></button>
         </p>
       </section>
