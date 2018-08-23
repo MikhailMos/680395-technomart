@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
 
+  min-width: 1280px;
+
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -12,4 +14,227 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.button {
+  font: inherit;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+/*--- Верхняя панель в хейдере ---*/
+
+.main-header-panel {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.search-input,
+.main-header-panel-bookmarks,
+.main-header-panel-bookmarks-num,
+.main-header-panel-basket,
+.main-header-panel-basket-num,
+.main-header-panel-makeorder {
+  color: inherit;
+  background-color: inherit;
+}
+
+.search-input {
+  border: 0;
+}
+
+.main-logo {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.main-logo:hover,
+.main-logo:focus {
+  color: #ffffff;
+  background-color: #ca2c37;
+}
+
+.main-logo:active {
+  color: #ffffff;
+  background-color: #ba2732;
+}
+
+.search-input:hover,
+.main-header-panel-bookmarks:hover,
+.main-header-panel-bookmarks:focus,
+.main-header-panel-basket:hover,
+.main-header-panel-basket:focus {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.search-input:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.icon-search,
+.icon-bookmark,
+.icon-basket {
+  opacity: 0.3;
+  background-color: transparent;
+}
+
+.icon-search:hover {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.icon-search:active {
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+.icon-search:focus path {
+  opacity: 1;
+  fill: #ee3643;
+}
+
+.main-header-panel-bookmarks:hover .icon-bookmark {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.main-header-panel-basket:hover .icon-basket {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.main-header-panel-bookmarks:active,
+.main-header-panel-basket:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.main-header-panel-bookmarks:active .icon-bookmark,
+.main-header-panel-basket:active .icon-basket{
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+.main-header-panel-makeorder {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.main-header-panel-makeorder:hover,
+.main-header-panel-makeorder:focus {
+  color: #ffffff;
+  background-color: #5fbb2d;
+}
+
+.main-header-panel-makeorder:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
+}
+
+/*--- Средняя панель в хейдере ---*/
+
+.main-header-middle {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 21px;
+  line-height: 21px;
+
+  color: #000000;
+  background-color: #f4f7f9;
+}
+
+.main-header-middle-descriptoin {
+  font-family: inherit;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+
+  color: #ee3643;
+}
+
+.main-header-middle-tel {
+  font: inherit;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+}
+
+.main-header-middle-address {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: #32425c;
+}
+
+.user-navigation,
+.site-navigation {
+  list-style: none;
+}
+
+.user-navigation {
+  color: #000000;
+}
+
+.user-navigation-login-link,
+.user-navigation-registration-link {
+  font: inherit;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-navigation-login-link:hover,
+.user-navigation-login-link:focus,
+.user-navigation-registration-link:hover,
+.user-navigation-registration-link:focus {
+  color: #ee3643;
+  background-color: #ffffff;
+}
+
+.user-navigation-login-link:hover path,
+.user-navigation-login-link:focus path {
+  fill: #32425c;
+}
+
+.user-navigation-login-link:active,
+.user-navigation-registration-link:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
+.site-navigation {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.site-navigation .site-navigation-link {
+  font: inherit;
+  color: #ffffff;
+}
+
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+  background-color: #293449;
+}
+
+.site-navigation-link:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #1d2739;
 }
