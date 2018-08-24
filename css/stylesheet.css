@@ -238,3 +238,87 @@ a {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
 }
+
+/*--- Промо-блок ---*/
+
+.promo-list,
+.promo-slider-list,
+.promo-offers-list {
+  list-style: none;
+
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17.5px;
+
+  color: #ffffff;
+
+  /*временный фон*/
+  /*background-color: #000000;*/
+}
+
+.promo-list h3,
+.promo-offers-list h3 {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.promo-slider-list .promo-slider-header {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.promo-slider-list .promo-slider-p {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.btn-promo {
+  display: inline-block;
+
+  width: 135px;
+  height: 38px;
+  border-radius: 3px;
+
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-slider-btn-open {
+  display: inline-block;
+
+  width: 195px;
+  height: 38px;
+  border-radius: 3px;
+
+  background-color: #ee3643;
+}
+
+.promo-list .promo-item:first-child {
+  background-color: #ffbf47;
+  }
+
+.promo-list .promo-item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.promo-offers-list .promo-offers-item:first-child {
+  background-color: #dc91d8;
+}
+
+.promo-offers-list .promo-offers-item:nth-child(2) {
+  background-color: #8ed78f;
+}
+
+.promo-offers-list .promo-offers-item:last-child {
+  background-color: #ffc047;
+}
+
+/*--- Раздел популярные товары ---*/
+
+.popular-goods-p {
+  background-color: #f9f5f0;
+}
