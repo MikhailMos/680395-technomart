@@ -16,11 +16,11 @@
 
         <a class="main-logo"><img src="img/logo.png" class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
         <form class="search-form">
+          <input type="text" class="search-input" name="panel-search" id="search-field" placeholder="Поиск:">
           <label for="search-field" class="search-label">
             <span class="visually-hidden">Поиск:</span>
-            <svg xmlns="http://www.w3.org/2000/svg"  class="icon-search" width="17" height="17" viewBox="0 0 17 17"><path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg"  class="icon-search" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
           </label>
-          <input type="text" class="search-input" name="panel-search" id="search-field" placeholder="Поиск:">
         </form>
         <a class="main-header-panel-bookmarks" href="bookmarks.html">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon-bookmark" width="14" height="16" viewBox="0 0 14 16"><path fill="#ffffff" d="M14 15c0 .55-.368.741-.818.426l-5.363-3.765c-.45-.315-1.187-.315-1.637 0L.818 15.426C.368 15.741 0 15.55 0 15V1c0-.55.45-1 1-1h12c.55 0 1 .45 1 1v14z"/></svg>
@@ -146,9 +146,9 @@
 
       <section class="popular-goods">
         <h2 class="visually-hidden">Популярные товары</h2>
-        <p class="popular-goods-p">
+        <p class="captyon-of-caticory popular-goods-p">
           Популярные товары:
-          <a class="button popular-goods-btn" href="populargoods.html" aria-label="Перейти в каталог популярных товаров">все популярные товары</a>
+          <a class="button caption-of-category-btn goods-btn" href="populargoods.html" aria-label="Перейти в каталог популярных товаров">все популярные товары</a>
         </p>
 
         <ul class="goods-list">
@@ -213,8 +213,8 @@
 
       <section class="popular-manufacturers">
         <h2 class="visually-hidden">Популярные производители</h2>
-        <p class="popular-manufacturers-p">
-          Популярные производители: <a class="button popular-manufacturers-btn" href="goods.html">все производители</a>
+        <p class="captyon-of-caticory popular-manufacturers-p">
+          Популярные производители: <a class="button caption-of-category-btn manufacturers-btn" href="goods.html">все производители</a>
         </p>
 
         <ul class="manufacturers-list" aria-label="Список производителей">
@@ -237,16 +237,18 @@
           <li class="service-item service-item-current">
             <a class="service-link" href="delivery.html">Доставка</a>
             <ul class="service-sublist">
-              <li class="service-sublist-item">
+              <li class="service-sublist-item sublist-item-delivery">
                 <h3>Доставка</h3>
-                <p class="service-sublist-item-p">Мы с удовольтвием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                <p class="service-sublist-item-p">
+                  Мы с удовольтвием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                </p>
               </li>
             </ul>
           </li>
           <li class="service-item">
             <a class="service-link" href="service.html">Гарантия</a>
             <ul class="service-sublist">
-              <li class="service-sublist-item">
+              <li class="service-sublist-item sublist-item-warranty">
                 <h3>Гарантия</h3>
                 <p class="service-sublist-item-p">Если купленный у нас товар пломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
                   Дом уж восстановите сами.
@@ -257,7 +259,7 @@
           <li class="service-item">
             <a class="service-link" href="credit.html">Кредит</a>
             <ul class="service-sublist">
-              <li class="service-sublist-item">
+              <li class="service-sublist-item sublist-item-credit">
                 <h3>Кредит</h3>
                 <p class="service-sublist-item-p">Залезть в дологовую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
               </li>

@@ -57,6 +57,42 @@ a {
   border: 0;
 }
 
+.icon-search {
+  opacity: 0.3;
+  fill: #ffffff;
+  background-color: transparent;
+}
+
+.search-input:hover {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.search-input:hover ~ .search-label .icon-search {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.search-input:focus {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.search-input:focus + .search-label {
+  background-color: #ffffff;
+}
+
+.search-input:focus + .search-label .icon-search {
+  opacity: 1;
+  fill: #ee3643;
+}
+
+.search-input:active + .search-label .icon-search {
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+
 .main-logo {
   color: #ffffff;
   background-color: #ee3643;
@@ -287,6 +323,16 @@ a {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.slider-control {
+  display: inline-block;
+
+  width: 22px;
+  height:40px;
+
+  /*верменно*/
+  background-color: #000000;
+}
+
 .promo-slider-btn-open {
   display: inline-block;
 
@@ -317,8 +363,217 @@ a {
   background-color: #ffc047;
 }
 
+/*--- Блоки разделов и кнопки (в т.ч. кнопка слайдера ---*/
+
+.captyon-of-caticory {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+
+  padding: 0 auto;
+
+  color: #32425c;
+  background-color: #f9f5f0;
+}
+
+.caption-of-category-btn {
+  display: inline-block;
+  width: 253px;
+  height: 38px;
+  border-radius: 3px;
+
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 17.5px;
+  font-weight: inherit;
+
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.promo-slider-btn-open:hover,
+.promo-slider-btn-open:focus,
+.caption-of-category-btn:hover,
+.caption-of-category-btn:focus {
+  background-color: #ca2c37;
+}
+
+.promo-slider-btn-open,
+.caption-of-category-btn:active {
+  background-color: #ba2732;
+}
+
 /*--- Раздел популярные товары ---*/
 
-.popular-goods-p {
-  background-color: #f9f5f0;
+.goods-list {
+   list-style: none;
+}
+
+.goods-item-card {
+  font-family: "PTSans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+
+  border: 1px solid #e5e5e5;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.goods-item-card .goods-item-title {
+  font: inherit;
+}
+
+.goods-item-price-old {
+  font-family: inherit;
+  font-size: 17.5px;
+  line-height: 17.5px;
+  font-weight: inherit;
+
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.goods-item-price-current {
+  font-family: inherit;
+  font-size: 17.5px;
+  line-height: 17.5px;
+  font-weight: inherit;
+
+  position: relative;
+  width: 122px;
+  height: 38px;
+
+  text-align: center;
+
+  color: #ffffff;
+  background-color: #ca2c37;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  /* не работает
+  background-image: url("img/background-price-current.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  */
+}
+
+.goods-item-price-current::after {
+  content: "";
+  position: absolute;
+  left: 122px;
+  border: 19px solid #ca2c37;
+  border-right: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+
+.goods-item-card:hover,
+.goods-item-card:focus {
+  box-shadow: 0 10px 25px rgba(41, 52, 73, 0.5);
+}
+
+.goods-item-btn-buy {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #ffffff;
+  background-color: #63a63e;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.goods-item-btn-buy:hover,
+.goods-item-btn-buy:focus {
+  background-color: #5fbb2d;
+  box-shadow: inset 0px -3px 0 0 #367315;
+}
+
+.goods-item-btn-buy:active {
+  background-color: #518534;
+}
+
+.goods-item-btn-inbookmarks {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: #32425c;
+  border: 3px solid #63a63e;
+}
+
+.goods-item-btn-inbookmarks:hover,
+.goods-item-btn-inbookmarks:focus {
+  border: 3px solid #32425c;
+}
+
+.goods-item-btn-inbookmarks:active {
+  opacity: 0.3;
+  border: 3px solid #32425c;
+}
+
+/*--- Раздел популярные производители ---*/
+.manufacturers-list {
+  list-style: none;
+}
+
+.manufacturers-link {
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+
+.manufacturers-link:hover,
+.manufacturers-link:focus {
+  background-color: #ffffff;
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.manufacturers-link:active {
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+/*--- Раздел сервисов ---*/
+
+.services {
+  color: #000000;
+  background-color: #f4f8fa;
+}
+
+.services h2 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.service-list,
+.service-sublist {
+  list-style: none;
+}
+
+.service-sublist h3 {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 36px;
+
+  color: #32425c;
+}
+
+.sublist-item-delivery {
+  background-color: inherit;
+  background-image: url("../img/background-delivery.png");
+  background-repeat: no-repeat;
+}
+
+.sublist-item-warranty {
+  background-color: inherit;
+  background-image: url("../img/background-warranty.png");
+  background-repeat: no-repeat;
+}
+
+.sublist-item-credit {
+  background-color: inherit;
+  background-image: url("../img/background-credit.png");
+  background-repeat: no-repeat;
 }
