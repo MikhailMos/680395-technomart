@@ -577,3 +577,194 @@ a {
   background-image: url("../img/background-credit.png");
   background-repeat: no-repeat;
 }
+
+/*--- Разделы о нас и контакты ---*/
+
+.about-us h2,
+.contacts h2 {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #000000;
+}
+
+.company-delivery-list {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+
+  color: #000000;
+
+  list-style: none;
+}
+
+.company-delivery-btn,
+.contacts-btn {
+  background-color: #ee3643;
+}
+
+.company-delivery-btn:hover,
+.company-delivery-btn:focus,
+.contacts-btn:hover,
+.contacts-btn:focus {
+  background-color: #ca2c37;
+}
+
+.company-delivery-btn:active,
+.contacts-btn:active {
+  background-color: #ba2732;
+}
+
+/*--- Футер ---*/
+
+.main-footer{
+  color: #f1f5f7;
+  background-color: #32425c;
+}
+
+.footer-top,
+.footer-middle {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.footer-top-nav-list,
+.footer-promo-navigation {
+  list-style: none;
+}
+
+.footer-site-link {
+  color: #f1f5f7;
+  background-color: #32425c;
+}
+
+.footer-site-link:hover,
+.footer-site-link:focus {
+  text-decoration-line: underline;
+}
+
+.footer-site-link:active {
+  text-decoration-line: none;
+  color: rgba(241, 245, 247, 0.5);
+}
+
+.footer-promo-link {
+  color: #ffd180;
+  background-color: #32425c;
+}
+
+.footer-promo-link:hover,
+.footer-promo-link:focus {
+  text-decoration-line: underline;
+}
+
+.footer-promo-link:active {
+  color: rgba(255, 209, 128, 0.5);
+}
+
+.footer-bottom {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #293449;
+}
+
+.social-list {
+  list-style: none;
+}
+
+.social-link {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+
+  background-color: #212a3a;
+}
+
+.social-item:first-child .social-link {
+  background-image: url('../img/icon-vk.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.social-item:nth-child(2) .social-link {
+  background-image: url('../img/icon-fb.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.social-item:last-child .social-link {
+  background-image: url('../img/icon-insta.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.social-link:hover,
+.social-link:focus,
+.social-link:active {
+  background-color: #ee3643;
+}
+
+.footer-link,
+.developedby-link {
+  color: #ffd180;
+}
+
+.footer-link:hover,
+.footer-link:focus,
+.developedby-link:hover,
+.developedby-link:focus {
+  text-decoration-line: underline;
+}
+
+.footer-link:active,
+.developedby-link:active {
+  text-decoration-line: none;
+  color: #ee3643;
+}
+
+/*--- Модальные формы ---*/
+
+.fullmap-picture {
+  box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
+}
+
+.button-close {
+  width: 21px;
+  height: 21px;
+  border: 0;
+  background-color: transparent;
+  background-image: url('../img/icon-close.svg');
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.write-us {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  color: #000000;
+}
+
+.write-us-btn-send {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: inherit;
+  color: #ffffff;
+  background-color: #ee3643;
+  border-radius: 3px;
+  border: 0;
+}
+
+.write-us-btn-send:hover,
+.write-us-btn-send:focus {
+  background-color: #ca2c37;
+}
+
+.write-us-btn-send:focus {
+  background-color: #ba2732;
+}
