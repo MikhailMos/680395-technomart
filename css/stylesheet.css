@@ -336,6 +336,10 @@ a {
   background-color: #ffffff;
 }
 
+.breadcrumps-link {
+  color: inherit;
+}
+
 /*--- Промо-блок ---*/
 
 .promo-list,
