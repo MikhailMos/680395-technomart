@@ -10,11 +10,14 @@ a {
 }
 
 .button {
+  display: inline-block;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 17.5px;
 
   text-align: center;
+  vertical-align: middle;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -105,7 +108,8 @@ a {
 }
 
 
-.main-logo {
+.main-logo,
+.bookmarks-no-empty {
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -179,6 +183,7 @@ a {
   background-color: transparent;
 }
 */
+
 .main-header-panel-makeorder {
   color: #ffffff;
   background-color: #63a63e;
@@ -230,20 +235,51 @@ a {
 }
 
 .user-navigation,
+/* .user-navigation-login, */
 .site-navigation {
   list-style: none;
+}
+
+.user-navigation-login .user-navigation-item:first-child,
+.user-navigation-login .user-navigation-item:nth-child(2) {
+  list-style-type: none;
 }
 
 .user-navigation {
   color: #000000;
 }
 
+.user-navigation-item {
+  color: #32425c;
+}
+
 .user-navigation-login-link,
-.user-navigation-registration-link {
+.user-navigation-registration-link,
+.user-navigation-profile-link {
   font: inherit;
   text-transform: none;
   color: #000000;
   background-color: #ffffff;
+}
+
+.user-navigation-orders,
+.user-navigation-privatearea {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+}
+
+.user-navigation-orders:hover,
+.user-navigation-orders:focus,
+.user-navigation-privatearea:hover,
+.user-navigation-privatearea:focus {
+  color: #ee3643;
+}
+
+.user-navigation-orders:active,
+.user-navigation-privatearea:active {
+  opacity: 0.3;
 }
 
 .user-navigation-login-link:hover,
@@ -286,6 +322,18 @@ a {
 .site-navigation-link:active {
   color: rgba(255, 255, 255, 0.5);
   background-color: #1d2739;
+}
+
+/*--- Хлебные крошки ---*/
+.breadcrumps {
+  list-style: none;
+
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 /*--- Промо-блок ---*/
@@ -333,13 +381,20 @@ a {
 }
 
 .btn-promo {
-  display: inline-block;
-
   width: 135px;
   height: 38px;
   border-radius: 3px;
 
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.btn-promo:hover,
+.btn-promo:focus {
+  opacity: 0.2;
+}
+
+.btn-promo:active {
+  opacity: 0.3;
 }
 
 .promo-slider-btn-open {
@@ -400,6 +455,15 @@ a {
 
   color: #ffffff;
   background-color: #ee3643;
+}
+
+.catalog-caption-category {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 30px;
+  line-height: 30px;
+
+  color: #32425c;
+  background-color: #f2f6f8;
 }
 
 /*--- Раздел популярные товары ---*/
@@ -772,6 +836,154 @@ a {
   color: #ee3643;
 }
 
+/*--- Фильтр ---*/
+
+.filters {
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.filter-title {
+  font: inherit;
+  background-color: #f7f3ec;
+}
+
+.price-title,
+.manufacturers-title,
+.energy-title {
+  font-family: inherit;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+.energy-title {
+  letter-spacing: 0.2px;
+}
+
+.filter-by-price,
+.filter-by-manufacturers,
+.filter-by-energy {
+  border: none;
+}
+
+.filter-by-price,
+.filter-by-manufacturers {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filter-list {
+  list-style: none;
+}
+
+.btn-show {
+  font: inherit;
+
+  width: 140px;
+  height: 38px;
+
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+}
+
+.btn-show:hover,
+.btn-show:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #bdc6ca;
+}
+
+.btn-show:active {
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #ee3643;
+}
+
+/*--- Секция сортировки ---*/
+
+.sorting {
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.sorting-list {
+  list-style: none;
+}
+
+.sorting-link  {
+  color: inherit;
+  opacity: 0.3;
+  border-bottom: 1px dashed rgba(238, 54, 67, 1);
+}
+
+.sorting-link-current {
+  color: #ee3643;
+  opacity: 1;
+  border-bottom: none;
+}
+
+.sorting-link:hover,
+.sorting-link:focus {
+  color: #000000;
+  opacity: 1;
+  border-bottom: 1px solid rgba(238, 54, 67, 1);
+}
+
+.sorting-link:active {
+  color: #ee3643;
+  border-bottom: none;
+}
+
+/*--- Пагинация ----*/
+
+.pagination-list {
+  list-style: none;
+
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.pagination-link {
+  font: inherit;
+
+  color: inherit;
+  background-color: inherit;
+
+  border: 1px solid #e5e5e5;
+}
+
+.pagination-link:hover,
+.pagination-link:focus {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination-link:active {
+  border: 1px solid #ee3643;
+}
+
+.pagination-item-current .pagination-link {
+  color: #ffffff;
+  background-color: #ee3643;
+
+  border: none;
+}
+
 /*--- Модальные формы ---*/
 
 .fullmap-picture {
@@ -812,4 +1024,57 @@ a {
 
 .write-us-btn-send:focus {
   background-color: #ba2732;
+}
+
+.order-info {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+
+  width: 620px;
+  height: 282px;
+
+  color: #000000;
+  background-color: #ffffff;
+
+  box-shadow: inset 0px 7px 0 0 #e33643,
+              0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
+
+.order-info-p {
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.order-info-buttons {
+  background-color: #f1f1f1;
+}
+
+.order-info-btn-issueorder {
+  font: inherit;
+
+  background-color: #ee3643;
+}
+
+.order-info-btn-issueorder:hoever,
+.order-info-btn-issueorder:fouces {
+  background-color: #ca2c37;
+}
+
+.order-info-btn-issueorder:active {
+  background-color: #ba2732;
+}
+
+.order-info-btn-continue {
+  font: inherit;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.order-info-btn-continue:hover,
+.order-info-btn-continue:focus {
+  opacity: 0.85;
+  background-color: #ffffff;
 }

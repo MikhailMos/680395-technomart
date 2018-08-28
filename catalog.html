@@ -16,14 +16,17 @@
 
         <a class="main-logo" href="index.html"><img src="img/logo.png" class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-          <label for="search-field" class="visually-hidden search-label">Поиск:</label>
+          <label for="search-field" class="search-label">
+            <span class="visually-hidden">Поиск:</span>
+            <svg xmlns="http://www.w3.org/2000/svg"  class="icon-search" width="17" height="17" viewBox="0 0 17 17"><path d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/></svg>
+          </label>
           <input type="text" class="search-input" name="panel-search" id="search-field" placeholder="Поиск:">
         </form>
         <a class="main-header-panel-bookmarks" href="bookmarks.html">
           Закладки:
           <span class="main-header-panel-bookmarks-num">0</span>
         </a>
-        <a class="main-header-panel-basket" href="mybasket.html">Корзина:
+        <a class="main-header-panel-basket bookmarks-no-empty" href="mybasket.html">Корзина:
           <span class="main-header-panel-basket-num">10</span>
         </a>
         <a class="main-header-panel-makeorder" href="issueorder.html">Оформить заказ</a>
@@ -75,14 +78,14 @@
           <li class="breadcrumps-item breadcrumps-current">Перфораторы</li>
         </ul>
 
-        <h2>Перфораторы</h2>
+        <h2 class="catalog-caption-category">Перфораторы</h2>
 
         <section class="filters">
-          <h3 class="visually-hidden">Фильтр</h3>
+          <h3 class="filter-title">Фильтр:</h3>
 
-          <form class="filtres-form" action="https://echo.htmlacademy.ru" method="get">
+          <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter-by-price">
-              <legend>Цена:</legend>
+              <legend class="price-title">Цена:</legend>
               <!--ползунок с двумя бегунками-->
 
                 <div class="range-body">
@@ -100,7 +103,7 @@
             </fieldset>
 
             <fieldset class="filter-by-manufacturers">
-              <legend>Производители:</legend>
+              <legend class="manufacturers-title">Производители:</legend>
 
               <ul class="filter-list">
                 <li class="filter-item">
@@ -135,7 +138,7 @@
             </fieldset>
 
             <fieldset class="filter-by-energy">
-              <legend>Питание:</legend>
+              <legend class="energy-title">Питание:</legend>
 
               <ul class="filter-list">
                 <li class="filter-item">
@@ -158,15 +161,15 @@
 
           <p class="sorting-p">
             Сортировка:
-            <ul class="sort-list">
-              <li class="sort-item sort-item-current"><a class="sort-link-by-price" href="#">по цене</a></li>
-              <li class="sort-item"><a class="sort-link-by-type" href="#">по типу</a></li>
-              <li class="sort-item"><a class="sort-link-by-functions" href="#">по функционалу</a></li>
-              <li class="sort-item">
-                <a class="arrow sort-link-arrowup sort-item-current" href="/catalog.html?ordered=desc"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+            <ul class="sorting-list">
+              <li class="sorting-item sort-item-current"><a class="sorting-link sorting-link-current sorting-link-by-price" href="#">по цене</a></li>
+              <li class="sorting-item"><a class="sorting-link sorting-link-by-type" href="#">по типу</a></li>
+              <li class="sorting-item"><a class="sorting-link sorting-link-by-functions" href="#">по функционалу</a></li>
+              <li class="sorting-item sort-item-current">
+                <a class="arrow sorting-link-arrowup sorting-link-current" href="/catalog.html?ordered=desc"><span class="visually-hidden">Сортировать по возрастанию</span></a>
               </li>
-              <li class="sort-item">
-                <a class="arrow sort-link-arrodown" href="/catalog.html?ordered=asc"><span class="visually-hidden">Сортировать по убыванию</span></a>
+              <li class="sorting-item">
+                <a class="arrow sorting-link-arrodown" href="/catalog.html?ordered=asc"><span class="visually-hidden">Сортировать по убыванию</span></a>
               </li>
             </ul>
           </p>
@@ -334,13 +337,13 @@
         <section class="footer-top" aria-label="Навигация по основным разделам сайта">
           <h2 class="visually-hidden">Секция с навигацией по сайту</h2>
 
-          <a class="main-logo" href="index.html"><img class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
-          <ul class="footer-top-nav-list site-navigation">
-            <li class="footer-top-nav-item site-navigation-item"><a class="site-navigation-link" href="company.html">Компания</a></li>
-            <li class="footer-top-nav-item site-navigation-item"><a class="site-navigation-link" href="news.html">Новости</a></li>
-            <li class="footer-top-nav-item site-navigation-item"><a class="site-navigation-link" href="catalog.html">Каталог</a></li>
-            <li class="footer-top-nav-item site-navigation-item"><a class="site-navigation-link" href="delivery.html">Доставка</a></li>
-            <li class="footer-top-nav-item site-navigation-item"><a class="site-navigation-link" href="contacts.html">Контакты</a></li>
+          <a class="main-logo" href="index.html"><img src="img/logo.png" class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
+          <ul class="footer-top-nav-list">
+            <li class="footer-top-nav-item"><a class="footer-site-link" href="company.html">Компания</a></li>
+            <li class="footer-top-nav-item"><a class="footer-site-link" href="news.html">Новости</a></li>
+            <li class="footer-top-nav-item"><a class="footer-site-link" href="catalog.html">Каталог</a></li>
+            <li class="footer-top-nav-item"><a class="footer-site-link" href="delivery.html">Доставка</a></li>
+            <li class="footer-top-nav-item"><a class="footer-site-link" href="contacts.html">Контакты</a></li>
           </ul>
         </section>
 
@@ -403,11 +406,13 @@
 
       <section class="modal order-info">
         <h2 class="visually-hidden">Информация о заказе</h2>
-        <p class="order-info-p">Товар добавлен в корзину!</p>
+        <p class="order-info-p">
+          Товар добавлен в корзину!
+          <button type="button" name="btn-close" class="button-close order-info-btn-close"><span class="visually-hidden">Закрыть</span></button>
+        </p>
         <p class="order-info-buttons">
           <a class="button order-info-btn-issueorder" href="issueorder.html">Оформить заказ</a>
           <a name="continuetobay" class="button order-info-btn-continue">Продолжить покупки</a>
-          <button type="button" name="btn-close" class="button-close order-info-btn-close"><span class="visually-hidden">Закрыть</span></button>
         </p>
       </section>
   </body>
