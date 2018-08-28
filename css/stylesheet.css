@@ -897,12 +897,14 @@ a {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #bdc6ca;
+  outline: none;
 }
 
 .btn-show:active {
   color: #000000;
   background-color: #ffffff;
   border: 1px solid #ee3643;
+  outline: none;
 }
 
 /*--- Секция сортировки ---*/
