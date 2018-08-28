@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
 
-  min-width: 1280px;
+  min-width: 960px;
 }
 
 a {
@@ -45,6 +45,18 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  box-sizing: border-box;
+}
+
+.main-header {
+  background-color: #f4f7f9;
 }
 
 /*--- Верхняя панель в хейдере ---*/
@@ -624,6 +636,7 @@ a {
 .service-list,
 .service-sublist {
   list-style: none;
+  padding: 0;
 }
 
 .service-button {
@@ -662,18 +675,21 @@ a {
   background-color: inherit;
   background-image: url("../img/background-delivery.png");
   background-repeat: no-repeat;
+  background-position: 100% 20px;
 }
 
 .sublist-item-warranty {
   background-color: inherit;
   background-image: url("../img/background-warranty.png");
   background-repeat: no-repeat;
+  background-position: 100% 20px;
 }
 
 .sublist-item-credit {
   background-color: inherit;
   background-image: url("../img/background-credit.png");
   background-repeat: no-repeat;
+  background-position: 100% 20px;
 }
 
 .btn-credit {
@@ -1084,3 +1100,293 @@ a {
   opacity: 0.85;
   background-color: #ffffff;
 }
+
+/*=== Сетки ===*/
+
+.main-header {
+  margin-bottom: 59px;
+  padding-bottom: 60px;
+}
+
+.main-header-panel {
+  margin-bottom: 46px;
+}
+
+.main-header-panel {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-header-wrapper {
+  width: 100%;
+  background-color: #293449;
+}
+
+.main-logo,
+.main-header-panel-bookmarks,
+.main-header-panel-basket,
+.main-header-panel-makeorder {
+  padding: 12px 20px;
+}
+
+.search-form {
+  flex-grow: 1;
+
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: stretch;
+}
+
+.search-input {
+  flex-grow: 1;
+}
+
+.search-label {
+  padding: 12px 15px 0 17px;
+}
+
+.main-header-middle {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.main-header-middle-descriptoin,
+.main-header-middle-info,
+.user-navigation {
+  width: 300px;
+
+  /* временные границы */
+  background-color: rgba(192, 127, 15, 0.2);
+  box-shadow: 0 0 2px rgba(47, 228, 23, 0.548);
+}
+
+.main-header-middle-descriptoin,
+.main-header-middle-tel,
+.main-header-middle-address {
+  padding: 0;
+  margin: 0;
+}
+
+.user-navigation,
+.site-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-navigation-item {
+  flex-grow: 1;
+}
+
+.site-navigation-link {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.promo-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 53px;
+}
+
+.promo-list,
+.promo-offers-list {
+  margin: 0;
+  padding: 0;
+}
+
+.promo-offers-list {
+  flex-grow: 1;
+}
+
+.promo-offers-item {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  border: 1px solid transparent;
+}
+
+.promo-list {
+  width: 620px;
+  margin-right: 20px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.promo-item {
+  flex-grow: 1;
+  margin-bottom: 20px;
+}
+
+.promo-item:first-child {
+  margin-right: 20px;
+}
+
+.promo-slider-list {
+  margin: 0;
+  padding: 0;
+}
+
+.caption-of-caticory {
+  margin: 0;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 89px;
+}
+
+.caption-of-category-text {
+  margin-left: 30px;
+}
+
+.caption-of-category-btn {
+  margin-right: 24px;
+}
+
+.goods-list {
+  margin: 0;
+  margin-bottom: 21px;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-height: 318px;
+}
+
+.goods-item {
+  width: 220px;
+}
+
+.manufacturers-list {
+  margin: 0;
+  margin-bottom: 85px;
+  padding: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  min-height: 310px;
+}
+
+.manufacturers-item {
+  width: 220 px;
+  margin-bottom: 20px;
+}
+
+.manufacturers-link {
+  display: block;
+  width: 220px;
+  height: 145px;
+  text-align: center;
+}
+
+.services-wrapper {
+  width: 100%;
+  background-color: #f4f8fa;
+}
+
+.services {
+  margin-bottom: 82px;
+  padding-top: 68px;
+}
+
+.service-p {
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
+
+  width: 430px;
+  margin-bottom: 74px;
+}
+
+.services-flex {
+  display: flex;
+}
+
+.service-list {
+  margin-right: 80px;
+}
+
+.service-sublist {
+  flex-grow: 1;
+}
+
+.sublist-item-title {
+  margin-top: 0;
+}
+
+.service-sublist-item-p {
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
+
+  width: 275px
+}
+
+.inform-flex {
+  display: flex;
+  margin-bottom: 86px;
+}
+
+.about-us {
+  margin-right: 100px;
+}
+
+.about-us-p {
+  margin-bottom: 30px;
+}
+
+.company-delivery-item {
+  margin-bottom: 24px;
+}
+
+.company-delivery-btn {
+  display: block;
+  width: 220px;
+  margin-top: 40px;
+  padding: 10px 0;
+  border-radius: 3px;
+}
+
+.about-us,
+.contacts {
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+
+  color: #000000;
+}
+
+.contacts-p {
+  margin-bottom: 36px;
+}
+
+.contacts-btn {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px 0;
+  border-radius: 3px;
+}
+
