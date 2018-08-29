@@ -326,7 +326,7 @@
         <section class="footer-top" aria-label="Навигация по основным разделам сайта">
           <h2 class="visually-hidden">Секция с навигацией по сайту</h2>
 
-          <a class="main-logo"><img src="img/logo.png" class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
+          <a class="main-logo logo-footer"><img src="img/logo.png" class="main-logo-img" width="110" height="18" alt="Техномарт"></a>
           <ul class="footer-top-nav-list">
             <li class="footer-top-nav-item"><a class="footer-site-link" href="company.html">Компания</a></li>
             <li class="footer-top-nav-item"><a class="footer-site-link" href="news.html">Новости</a></li>
@@ -354,7 +354,8 @@
       </div>
 
       <section class="footer-bottom">
-        <div class="container">
+        <div class="container footer-bottom-wrapper">
+
           <h2 class="visually-hidden">Секция с копирайтом, сылками на соцсети и обратная связь</h2>
 
           <p class="copyright" aria-label="copyright">
@@ -379,29 +380,40 @@
       </section>
     </footer>
 
-    <section class="modal fullmap">
-      <h2 class="visually-hidden">Полная карта</h2>
-      <form class="fullmap-form">
-        <img class="fullmap-picture" src="img/map-big.jpg" alt="Полная карта с указанием адреса: ул. Большаяя Конюшенная 19">
-        <button type="button" name="btn-close" class="button-close fullmap-btn-close"><span class="visually-hidden">Закрыть</span></button>
-      </form>
-    </section>
+    <div class="container">
+      <section class="modal fullmap">
+        <h2 class="visually-hidden">Полная карта</h2>
+        <form class="fullmap-form">
+          <img class="fullmap-picture" src="img/map-big.jpg" alt="Полная карта с указанием адреса: ул. Большаяя Конюшенная 19">
+          <button type="button" name="btn-close" class="button-close fullmap-btn-close"><span class="visually-hidden">Закрыть</span></button>
+        </form>
+      </section>
 
-    <section class="modal write-us">
-      <h2 class="visually-hidden">Форма обратной связи</h2>
-      <form class="write-us-form" method="POST" action="https://echo.htmlacademy.ru">
-        <label class="write-us-name" for="userNameField">Ваше имя:</label>
-        <input type="text" name="userName" id="userNameField" placeholder="Ваше имя">
+      <section class="modal write-us">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <form class="write-us-form" method="POST" action="https://echo.htmlacademy.ru">
+          <div class="form-wrapper">
+            <p class="write-us-user">
+              <label class="write-us-name" for="userNameField">Ваше имя:</label>
+              <input type="text" name="userName" id="userNameField" class="write-us-input" placeholder="Ваше имя">
+            </p>
+            <p class="write-us-email">
+              <label class="write-us-email" for="userEmailField">Ваш e-mail:</label>
+              <input type="email" name="userEmail" id="userEmailField" class="write-us-input" placeholder="Ваш e-mail">
+            </p>
+            <p class="write-us-text">
+              <label class="write-us-letter" for="letterField">Текст письма:</label>
+              <textarea name="content-of-letter" class="text-of-letter" id="letterField" cols="47" rows="8" placeholder="В свободной форме"></textarea>
+            </p>
+          </div>
 
-        <label class="write-us-email" for="userEmailField">Ваш e-mail:</label>
-        <input type="email" name="userEmail" id="userEmailField" placeholder="Ваш e-mail">
+          <p class="btn-wrapper">
+            <button type="submit" name="btn-send" class="button write-us-btn-send">Отправить</button>
+          </p>
 
-        <label class="write-us-letter" for="letterField">Текст письма:</label>
-        <textarea name="content-of-letter" class="text-of-letter" id="letterField" cols="50" rows="8" placeholder="В свободной форме"></textarea>
-
-        <button type="submit" name="btn-send" class="button write-us-btn-send">Отправить</button>
-        <button type="button" name="btn-close" class="button-close write-us-btn-close"><span class="visually-hidden">Закрыть</span></button>
-      </form>
-    </section>
+          <button type="button" name="btn-close" class="button-close write-us-btn-close"><span class="visually-hidden">Закрыть</span></button>
+        </form>
+      </section>
+    </div>
   </body>
 </html>
