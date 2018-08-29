@@ -1048,6 +1048,7 @@ a {
   padding-top: 45px;
   width: 620px;
 
+
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
@@ -1068,13 +1069,19 @@ a {
   width: 220px;
 }
 
-.write-us-input {
-  width: 220px;
+.write-us-input,
+.text-of-letter {
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 13px;
 }
 
 .text-of-letter {
-  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 37px;
 }
+
+
 
 .btn-wrapper {
   margin: 0;
