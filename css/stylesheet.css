@@ -347,6 +347,15 @@ a {
 .user-navigation-login .user-navigation-item:nth-child(2) {
   margin-right: 30px;
 }
+/* пришлось запретить перенос в 3м пункте */
+.user-navigation-login .user-navigation-item:nth-child(3) {
+  white-space: nowrap;
+}
+
+.user-navigation-login .user-navigation-orders,
+.user-navigation-login .user-navigation-privatearea {
+  text-decoration: underline;
+}
 
 .user-navigation {
   color: #000000;
@@ -419,16 +428,17 @@ a {
   flex-grow: 1;
 }
 
-.site-navigation-link {
+.site-navigation .site-navigation-link {
   display: block;
   width: 100%;
   min-height: 40px;
   padding-top: 20px;
   text-align: center;
-}
 
-.site-navigation .site-navigation-link {
-  font: inherit;
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 17px;
+
   color: #ffffff;
 }
 
@@ -671,12 +681,17 @@ a {
 
    display: flex;
    flex-wrap: wrap;
-   justify-content: space-between;
+   /* justify-content: space-between; */
 }
 
 .goods-item {
+  margin-right: 20px;
   margin-bottom: 20px;
   width: 220px;
+}
+
+.goods-item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .goods-item-card {
@@ -1253,8 +1268,12 @@ a {
 }
 
 .filter-title {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 14px 0 15px 18px;
   font: inherit;
   background-color: #f7f3ec;
+  border-radius: 3px;
 }
 
 .price-title,
@@ -1319,14 +1338,35 @@ a {
   line-height: 18px;
   text-transform: uppercase;
 
+  margin-bottom: 20px;
   width: 700px;
 
   color: #000000;
   background-color: #f7f3ec;
+  border-radius: 3px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sorting-p {
+  margin: 0;
+  margin-right: auto;
+  padding: 14px 0 15px 18px;
 }
 
 .sorting-list {
   list-style: none;
+
+  margin: 0;
+  padding: 0;
+  width: 480px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .sorting-link  {
