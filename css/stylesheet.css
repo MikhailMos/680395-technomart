@@ -105,16 +105,21 @@ a {
 .search-input {
   border: 0;
   flex-grow: 1;
+  outline: none;
 }
 
 .search-label {
-  padding: 12px 15px 0 17px;
+  padding: 12px 14px 0 17px;
 }
 
 .icon-search {
   opacity: 0.3;
   fill: #ffffff;
   background-color: transparent;
+}
+
+.search-input::placeholder {
+  opacity: 1;
 }
 
 .search-input:hover {
@@ -152,16 +157,77 @@ a {
   background-color: #ee3643;
 }
 
-.main-logo,
 .main-header-panel-bookmarks,
 .main-header-panel-basket,
 .main-header-panel-makeorder {
-  padding: 12px 20px;
+  box-sizing: border-box;
+  padding: 12px 0;
+  width: 150px;
 }
 
+.main-header-panel-makeorder {
+  text-align: center;
+}
+
+.main-header-panel-bookmarks {
+  position: relative;
+  padding-left: 44px;
+}
+
+.main-header-panel-bookmarks::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 12px;
+
+  width: 14px;
+  height: 17px;
+  opacity: 0.3;
+
+  background-image: url("../img/icon-bookmark.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-header-panel-basket {
+  position: relative;
+  padding-left: 49px;
+}
+
+.main-header-panel-basket::before {
+  content: "";
+  position: absolute;
+  left: 17px;
+  top: 12px;
+
+  width: 15px;
+  height: 15px;
+  opacity: 0.3;
+
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.main-header-panel-bookmarks:hover::before,
+.main-header-panel-bookmarks:focus::before,
+.main-header-panel-basket:hover::before,
+.main-header-panel-basket:focus::before {
+  content: "";
+  opacity: 1;
+}
+
+.main-header-panel-bookmarks:active::before,
+.main-header-panel-basket:active::before {
+  content: "";
+  opacity: 0.5;
+}
 
 .main-logo {
   margin-bottom: -5px;
+  padding: 13px 0 11px;
+  width: 220px;
+  text-align: center;
   box-shadow: inset 0 -5px rgba(0, 0, 0, 0.24);
 }
 
@@ -200,21 +266,6 @@ a {
 .icon-basket {
   opacity: 0.3;
   background-color: transparent;
-}
-
-.icon-search:hover {
-  opacity: 1;
-  background-color: transparent;
-}
-
-.icon-search:active {
-  opacity: 0.5;
-  background-color: transparent;
-}
-
-.icon-search:focus path {
-  opacity: 1;
-  fill: #ee3643;
 }
 
 .main-header-panel-bookmarks:hover .icon-bookmark {
@@ -268,16 +319,17 @@ a {
 
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 
-  margin-bottom: 40px;
+  margin-bottom: 41px;
 }
 
 .main-header-middle-descriptoin {
   margin: 0;
   padding: 0;
+  padding-top: 3px;
 
-  width: 270px;
+  width: 200px;
 
   font-family: inherit;
   font-size: 16px;
@@ -287,10 +339,18 @@ a {
   color: #ee3643;
 }
 
-.main-header-middle-info,
-.user-navigation {
+.main-header-middle-info {
+  margin-left: 68px;
   width: 270px;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-header-middle-descriptoin,
+.main-header-middle-info,
+.user-navigation {
   /* временные границы */
   background-color: rgba(192, 127, 15, 0.2);
   box-shadow: 0 0 2px rgba(47, 228, 23, 0.548);
@@ -298,11 +358,15 @@ a {
 
 .main-header-middle-tel {
   margin: 0;
-  padding: 0;
+  padding: 10px 0 8px 71px;
 
   font: inherit;
   color: #ee3643;
   border: 3px solid #ffffff;
+
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 10px;
 }
 
 .main-header-middle-address {
@@ -312,6 +376,7 @@ a {
   font-family: inherit;
   font-size: 14px;
   line-height: 24px;
+  text-align: center;
 
   color: #32425c;
 }
@@ -327,9 +392,10 @@ a {
 .user-navigation-login {
   margin: 0;
   padding: 0;
+  width: 299px;
+
   display: flex;
   flex-wrap: wrap;
-  width: 299px;
 
   /* временные границы */
   background-color: rgba(192, 127, 15, 0.2);
@@ -358,7 +424,13 @@ a {
 }
 
 .user-navigation {
+  margin-left: 69px;
+  width: 281px;
   color: #000000;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .user-navigation-item {
@@ -372,6 +444,30 @@ a {
   text-transform: none;
   color: #000000;
   background-color: #ffffff;
+}
+
+.user-navigation-login-link {
+  position: relative;
+  padding: 12px 26px 13px 47px;
+}
+
+.user-navigation-login-link::before {
+  content: "";
+  position: absolute;
+
+  width: 20px;
+  height: 20px;
+
+  top: 13px;
+  left: 14px;
+
+  background-image: url("../img/icon-login.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.user-navigation-registration-link {
+  padding: 12px 24px 11px;
 }
 
 .user-navigation-orders,
