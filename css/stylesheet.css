@@ -56,7 +56,7 @@ a {
 }
 
 .main-header {
-  margin-bottom: 59px;
+  margin-bottom: 20px;
   padding-bottom: 60px;
 
   background-color: #f4f7f9;
@@ -393,8 +393,10 @@ a {
 
 .user-navigation-login {
   margin: 0;
+  margin-left: 50px;
   padding: 0;
   width: 299px;
+  list-style: none;
 
   display: flex;
   flex-wrap: wrap;
@@ -404,25 +406,45 @@ a {
   box-shadow: 0 0 2px rgba(47, 228, 23, 0.548);
 }
 
-.user-navigation-login .user-navigation-item:first-child {
-  width: 100%;
-}
+.user-general-panel {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 
-.user-navigation-login .user-navigation-item:not(:last-child) {
-  list-style-type: none;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 1px;
+
+  background-color: #ffffff;
 }
 
 .user-navigation-login .user-navigation-item:nth-child(2) {
-  margin-right: 30px;
+  margin-left: 18px;
+  margin-right: 32px;
 }
 /* пришлось запретить перенос в 3м пункте */
 .user-navigation-login .user-navigation-item:nth-child(3) {
   white-space: nowrap;
+  position: relative;
+}
+
+.user-navigation-login .user-navigation-item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -17px;
+
+  width: 4px;
+  height: 4px;
+
+  background-color: #32425c;
+  border-radius: 50%;
 }
 
 .user-navigation-login .user-navigation-orders,
 .user-navigation-login .user-navigation-privatearea {
   text-decoration: underline;
+  /* border-bottom: 1px solid #32425c; */
 }
 
 .user-navigation {
@@ -472,6 +494,54 @@ a {
   padding: 12px 24px 11px;
 }
 
+.user-navigation-profile-link {
+  position: relative;
+  padding-top: 12px;
+  padding-left: 47px;
+  padding-bottom: 5px;
+  padding-right: 26px;
+}
+
+.user-navigation-profile-link::before {
+  content: "";
+
+  position: absolute;
+  top: 13px;
+  left: 13px;
+
+  width: 20px;
+  height: 20px;
+
+  background-image: url("../img/icon-user.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  fill: #c5c5c5;
+}
+
+.user-navigation-logout-link {
+  flex-grow: 1;
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  fill: #c5c5c5;
+}
+
+.user-navigation-profile-link:hover path,
+.user-navigation-profile-link:focus path {
+  fill: #32425c;
+}
+
+.user-navigation-logout-link:hover,
+.user-navigation-logout-link:focus {
+  fill: #32425c;
+}
+
+.user-navigation-profile-link:active {
+  opacity: 0.3;
+}
+
+
 .user-navigation-orders,
 .user-navigation-privatearea {
   font-family: 'Cuprum', Arial, sans-serif;
@@ -485,6 +555,7 @@ a {
 .user-navigation-privatearea:hover,
 .user-navigation-privatearea:focus {
   color: #ee3643;
+  /* border-bottom-color: #ee3643; */
 }
 
 .user-navigation-orders:active,
@@ -606,6 +677,41 @@ a {
   color: inherit;
   margin-right: 15px;
 }
+
+.breadcrumps-item:first-child .breadcrumps-link {
+  display: inline-block;
+
+  width: 15px;
+  text-indent: -2000px;
+
+  background-image: url("../img/icon-home.svg");
+  background-repeat: no-repeat;
+  background-position: -2px 2px;
+}
+
+.breadcrumps-item:not(:first-child) {
+  position: relative;
+}
+
+.breadcrumps-item:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: -25px;
+
+  width: 8px;
+  height: 12px;
+
+  background-image: url("../img/icon-right-small.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.breadcrumps-item:not(:last-child) {
+  margin-right: 23px;
+}
+
+
 
 /*--- Промо-блок ---*/
 
@@ -1195,6 +1301,7 @@ a {
 .manufacturers-link:active {
   background-color: #ffffff;
   box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+  opacity: 0.3;
 }
 
 /*--- Раздел сервисов ---*/
