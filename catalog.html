@@ -50,8 +50,13 @@
 
           <ul class="user-navigation-login" aria-label="Навигация пользователя">
             <li class="user-navigation-item user-general-panel">
-              <a class="user-navigation-profile-link" href="profile.html">Равшан Джамшутович</a>
-              <a class="user-navigation-logout-link" href="logout.html"></a>
+              <a class="user-navigation-profile-link" href="profile.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-user" width="20" height="18" viewBox="0 0 20 18"><path d="M17.881 14.166c-2.144-.735-4.256-1.666-5.207-2.39-.657-.501-.77-1.618-.517-2.415 1.118-.903 1.864-2.477 1.864-4.278C14.021 2.276 12.221 0 10 0S5.979 2.276 5.979 5.083c0 1.801.746 3.374 1.863 4.277.253.798.141 1.915-.517 2.416-.95.724-3.063 1.654-5.207 2.39S0 18 0 18h20s.025-3.099-2.119-3.834z"/></svg>
+                Равшан Джамшутович
+              </a>
+              <a class="user-navigation-logout-link" href="logout.html">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-logout" width="21" height="17" viewBox="0 0 21 17"><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+              </a>
             </li>
             <li class="user-navigation-item"><a class="user-navigation-orders" href="myorders.html">Мои заказы</a></li>
             <li class="user-navigation-item"><a class="user-navigation-privatearea" href="privatearea.html">Личный кабинет</a></li>
@@ -102,15 +107,17 @@
 
                   <div class="range-body">
                     <div class="range-scale">
-                      <span class="range-sliders range-slider-min"></span>
-                      <span class="range-sliders range-slider-max"></span>
+                      <div class="range-scale-current">
+                        <span class="range-sliders range-slider-min"></span>
+                        <span class="range-sliders range-slider-max"></span>
+                      </div>
                     </div>
                   </div>
 
                 <p class="price-min-max-number">
-                  <input type="text" size="6" name="price-min" value="0" aria-label="Минимальня цена">
-                  -
-                  <input type="text" size="6" name="price-max" value="30000" aria-label="Максимальная цена">
+                  <input type="text" class="price-input price-input-min" size="6" name="price-min" value="0" aria-label="Минимальня цена">
+                  <span class="decorotive-dash"></span>
+                  <input type="text" class="price-input price-input-max" size="6" name="price-max" value="30000" aria-label="Максимальная цена">
                 </p>
               </fieldset>
 
@@ -120,29 +127,29 @@
                 <ul class="filter-list">
                   <li class="filter-item">
                     <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="BOSCH" id="filter-BOSCH" checked>
-                    <label for="filter-BOSCH">BOSCH</label>
+                    <label for="filter-BOSCH" class="filter-checkbox-label">BOSCH</label>
                   </li>
                   <li class="filter-item">
                     <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="interskol" id="filter-interskol">
-                    <label for="filter-interskol">
+                    <label for="filter-interskol" class="filter-checkbox-label">
                       Интерскол
                     </label>
                   </li>
                   <li class="filter-item">
                     <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="makita" id="filter-makita" checked>
-                    <label for="filter-makita">
+                    <label for="filter-makita" class="filter-checkbox-label">
                       Makita
                     </label>
                   </li>
                   <li class="filter-item">
                     <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="dewalt" id="filter-dewalt">
-                    <label for="filter-dewalt">
+                    <label for="filter-dewalt" class="filter-checkbox-label">
                       DeWalt
                     </label>
                   </li>
                   <li class="filter-item">
                     <input type="checkbox" class="visually-hidden filter-input filter-input-checkbox" name="hitachi" id="filter-hitachi">
-                    <label for="filter-hitachi">
+                    <label for="filter-hitachi" class="filter-checkbox-label">
                       Hitachi
                     </label>
                   </li>
@@ -155,11 +162,11 @@
                 <ul class="filter-list">
                   <li class="filter-item">
                     <input type="radio" class="visually-hidden filter-input filter-input-radio" name="method-of-power" id="filter-akb" checked>
-                    <label for="filter-akb">Аккумуляторные</label>
+                    <label for="filter-akb" class="filter-label-radio">Аккумуляторные</label>
                   </li>
                   <li class="filter-item">
                     <input type="radio" class="visually-hidden filter-input filter-input-radio" name="method-of-power" id="filter-net">
-                    <label for="filter-net">Сетевые</label>
+                    <label for="filter-net"  class="filter-label-radio">Сетевые</label>
                   </li>
                 </ul>
               </fieldset>
