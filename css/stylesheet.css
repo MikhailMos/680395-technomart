@@ -475,8 +475,7 @@ a {
   padding: 12px 26px 13px 47px;
 }
 
-.user-navigation-login-link::before {
-  content: "";
+.icon-login {
   position: absolute;
 
   width: 20px;
@@ -485,13 +484,11 @@ a {
   top: 13px;
   left: 14px;
 
-  background-image: url("../img/icon-login.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  fill: #c5c5c5;
 }
 
 .user-navigation-registration-link {
-  padding: 12px 24px 11px;
+  padding: 12px 24px 13px;
 }
 
 .user-navigation-profile-link {
@@ -561,8 +558,8 @@ a {
   background-color: #ffffff;
 }
 
-.user-navigation-login-link:hover path,
-.user-navigation-login-link:focus path {
+.user-navigation-login-link:hover .icon-login,
+.user-navigation-login-link:focus .icon-login {
   fill: #32425c;
 }
 
