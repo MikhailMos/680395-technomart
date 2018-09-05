@@ -32,7 +32,7 @@ a {
 }
 
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden /*:not(:focus):not(:active)*/ {
   position: absolute;
 
   width: 1px;
@@ -129,7 +129,8 @@ a {
   opacity: 1;
 }
 
-.search-input:hover {
+.search-input:hover,
+.search-input:hover ~ .search-label {
   color: #ffffff;
   background-color: #212a3a;
 }
@@ -1961,6 +1962,8 @@ a {
   background-position: 0 0;
 }
 
+
+
 .filter-label-radio::before {
   content: "";
   position: absolute;
@@ -1979,6 +1982,13 @@ a {
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.filter-input-checkbox:focus + .filter-checkbox-label::before,
+.filter-input-radio:focus + .filter-label-radio::before {
+  border-color: #663d15;
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .btn-show {
@@ -2217,6 +2227,17 @@ a {
 
 /*--- Модальные формы ---*/
 
+.modal {
+  display: none;
+  position: fixed;
+
+  z-index: 90; /*чтоб на модалках не появлялись разные слои*/
+}
+
+.modal-show {
+  display: block;
+}
+
 .button-close {
   width: 21px;
   height: 21px;
@@ -2225,17 +2246,39 @@ a {
   background-image: url('../img/icon-close.svg');
   background-repeat: no-repeat;
   background-position: 50%;
+
+  cursor: pointer;
+  z-index: 3;
 }
 
 /* модальная форма Карта */
+.modal-fullmap {
+  top: 50px;
+  left: 50%;
+  margin-left: -460px;
+}
+
 .fullmap-form {
   position: relative;
   top: 9px;
   right: 9px;
+
+  width: 940px;
+  height: 446px;
+  box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
+}
+
+.fullmap-iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
 }
 
 .fullmap-picture {
-  box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .fullmap-btn-close {
@@ -2245,12 +2288,18 @@ a {
 }
 
 /* модальная форма Обратная связь */
-.write-us {
+.modal-write-us {
+  top: 50px;
+  left: 50%;
+
+  margin: 40px auto;
+  margin-left: -310px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
-  margin: 40px auto;
+  background-color: #ffffff;
 }
 
 .write-us-form {
@@ -2326,32 +2375,36 @@ a {
 }
 
 /* модальная форма Информация о товаре */
-.order-info {
-  position: relative;
+.modal-order-info {
+  top: 50px;
+  left: 50%;
+
+  margin-left: -310px;
+
   font-family: 'Cuprum', Arial, sans-serif;
   font-size: 14px;
   line-height: 17.5px;
-
-  margin:0 auto 30px;
-  width: 620px;
-  height: 282px;
 
   color: #000000;
   background-color: #ffffff;
 
   box-shadow: inset 0px 7px 0 0 #e33643,
               0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+}
 
+.order-info-form {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  width: 620px;
+  min-height: 282px;
 }
-
-
 
 .order-info-btn-close {
   position: absolute;
-  top: 9px;
+  top: 16px;
   right: 9px;
 }
 
@@ -2362,11 +2415,28 @@ a {
 }
 
 .order-info-p {
+  position: relative;
   margin: 0;
+  margin-left: 130px;
   padding: 0;
   font-family: inherit;
   font-size: 30px;
   line-height: 30px;
+}
+
+.order-info-p::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -110px;
+
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+
+  background-image: url("../img/checkbox-in-circle.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .order-info-buttons {
@@ -2379,8 +2449,10 @@ a {
 .order-info-btn-issueorder,
 .order-info-btn-continue {
   width: 220px;
-  height: 38px;
   border-radius: 3px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .order-info-btn-issueorder {

@@ -153,8 +153,8 @@
 
           <ul class="goods-list">
             <li class="goods-item">
-              <article class="goods-item-card">
-                <a class="goods-item-link" href="BFG9000.html">
+              <article class="goods-item-card" tabindex="0">
+                <a class="goods-item-link" href="BFG9000.html" tabindex="-1">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 9000</h3>
                   <img class="goods-item-picture" src="img/bfg9000.jpg" width="215" height="140" alt="Перфоратор BOSCH BFG 9000">
                 </a>
@@ -162,13 +162,13 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">25500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html" role="button">Купить</a>
-                  <a class="button goods-item-btn-inbookmarks" aria-label="Добавить в закладки">В закладки</a>
+                  <a class="button goods-item-btn-inbookmarks" href="bookmarks.html" aria-label="Добавить в закладки">В закладки</a>
                 </p>
               </article>
             </li>
             <li class="goods-item">
-              <article class="goods-item-card">
-                <a class="goods-item-link" href="BFG3000.html">
+              <article class="goods-item-card" tabindex="0">
+                <a class="goods-item-link" tabindex="-1" href="BFG3000.html">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 3000</h3>
                   <img class="goods-item-picture" src="img/bfg3000.jpg" width="215" height="140" alt="Перфоратор BOSCH BFG 3000">
                 </a>
@@ -176,13 +176,13 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">15500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html" role="button">Купить</a>
-                  <a class="button goods-item-btn-inbookmarks" aria-label="Добавить в закладки">В закладки</a>
+                  <a class="button goods-item-btn-inbookmarks" href="bookmarks.html" aria-label="Добавить в закладки">В закладки</a>
                 </p>
               </article>
             </li>
             <li class="goods-item">
-              <article class="goods-item-card">
-                <a class="goods-item-link" href="BFG6000.html">
+              <article class="goods-item-card" tabindex="0">
+                <a class="goods-item-link" tabindex="-1" href="BFG6000.html">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 6000</h3>
                   <img class="goods-item-picture" src="img/bfg6000.jpg" width="215" height="140" alt="Перфоратор BOSCH BFG 6000">
                 </a>
@@ -190,14 +190,14 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">25500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html" role="button">Купить</a>
-                  <a class="button goods-item-btn-inbookmarks" aria-label="Добавить в закладки">В закладки</a>
+                  <a class="button goods-item-btn-inbookmarks" href="bookmarks.html" aria-label="Добавить в закладки">В закладки</a>
                 </p>
               </article>
             </li>
             <li class="goods-item">
-              <article class="goods-item-card">
+              <article class="goods-item-card" tabindex="0">
                 <div class="flag flag-new">Новинка</div>
-                <a class="goods-item-link" href="BFG2000.html">
+                <a class="goods-item-link" tabindex="-1" href="BFG2000.html">
                   <h3 class="goods-item-title">Перфоратор BOSCH BFG 2000</h3>
                   <img class="goods-item-picture" src="img/bfg2000.jpg" width="215" height="140" alt="Перфоратор BOSCH BFG 2000">
                 </a>
@@ -205,7 +205,7 @@
                 <p class="goods-item-price-current" aria-label="Текущая цена">12500 р.</p>
                 <p class="goods-item-action-bottons">
                   <a class="button goods-item-btn-buy" href="orderinfo.html">Купить</a>
-                  <a class="button goods-item-btn-inbookmarks" aria-label="Добавить в закладки">В закладки</a>
+                  <a class="button goods-item-btn-inbookmarks" href="bookmarks.html" aria-label="Добавить в закладки">В закладки</a>
                 </p>
               </article>
             </li>
@@ -388,15 +388,16 @@
     </footer>
 
     <div class="container">
-      <section class="modal fullmap">
+      <section class="modal modal-fullmap">
         <h2 class="visually-hidden">Полная карта</h2>
         <form class="fullmap-form">
+          <iframe src="https://yandex.ru/map-widget/v1/-/CBB4M0fvhA" class="fullmap-iframe" width="940" height="446" frameborder="1" allowfullscreen="true"></iframe>
           <img class="fullmap-picture" src="img/map-big.jpg" alt="Полная карта с указанием адреса: ул. Большаяя Конюшенная 19">
           <button type="button" name="btn-close" class="button-close fullmap-btn-close"><span class="visually-hidden">Закрыть</span></button>
         </form>
       </section>
 
-      <section class="modal write-us">
+      <section class="modal modal-write-us">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <form class="write-us-form" method="POST" action="https://echo.htmlacademy.ru">
           <div class="form-wrapper">
@@ -422,5 +423,7 @@
         </form>
       </section>
     </div>
+
+    <script src="js/myJScript.js"></script>
   </body>
 </html>
