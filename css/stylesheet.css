@@ -17,6 +17,28 @@
   }
 }
 
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -2262,6 +2284,10 @@ a {
   display: block;
 }
 
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .button-close {
   width: 21px;
   height: 21px;
@@ -2320,7 +2346,7 @@ a {
   top: 50px;
   left: 50%;
 
-  margin: 40px auto;
+  margin: 0 auto;
   margin-left: -310px;
 
   font-family: 'Cuprum', Arial, sans-serif;
@@ -2339,6 +2365,10 @@ a {
 
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+
+  animation-name: _animationMap;
+  animation-duration: 0.8s;
+  animation-timing-function: easy-out;
 }
 
 .form-wrapper {
