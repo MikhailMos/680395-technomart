@@ -1,3 +1,22 @@
+@keyframes _animationMap {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1.15);
+  }
+  90% {
+    transform: scale(0.90);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -2266,6 +2285,10 @@ a {
   width: 940px;
   height: 446px;
   box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
+
+  animation-name: _animationMap;
+  animation-duration: 0.8s;
+  animation-timing-function: easy-out;
 }
 
 .fullmap-iframe {
