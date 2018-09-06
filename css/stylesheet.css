@@ -2058,13 +2058,18 @@ a {
   align-items: center;
 }
 
-.sorting-p {
+.sorting-title {
+  font-family: 'PTSans', Arial, sans-serif;
+  font-size: 14px;
+  line-height: 17.5px;
+  font-weight: normal;
+
   margin: 0;
   margin-right: auto;
   padding: 11px 0 9px 18px;
 
   font-stretch: condensed;
-  letter-spacing: 0.6px;
+  /* letter-spacing: 0.6px; */
 }
 
 .sorting-list {

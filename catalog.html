@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>Техномарт: каталог</title>
-    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/stylesheet.css">
   </head>
@@ -55,7 +56,7 @@
                 Равшан Джамшутович
               </a>
               <a class="user-navigation-logout-link" href="logout.html">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-logout" width="21" height="17" viewBox="0 0 21 17"><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-logout" width="21" height="17" viewBox="0 0 21 17"><path d="M21 8.5L12.125 0v6h-6v5h6v6z"/><path d="M3.106 13.952V3.048c.018-.376.171-1.057 1.01-1.057h5.027V0H4.116C1.938 0 1.112 1.81 1.087 3.027v10.946C1.112 15.189 1.938 17 4.116 17h5.027v-1.99H4.116c-.839 0-.992-.683-1.01-1.058z"/></svg>
               </a>
             </li>
             <li class="user-navigation-item"><a class="user-navigation-orders" href="myorders.html">Мои заказы</a></li>
@@ -176,22 +177,19 @@
           </section>
           <div class="catalog-subcolumns">
             <section class="sorting">
-              <h3 class="visually-hidden">Сортировка</h3>
+              <h3 class="sorting-title">Сортировка:</h3>
 
-              <p class="sorting-p">
-                Сортировка:
-                <ul class="sorting-list">
-                  <li class="sorting-item sort-item-current"><a class="sorting-link sorting-link-current sorting-link-by-price" href="#">по цене</a></li>
-                  <li class="sorting-item"><a class="sorting-link sorting-link-by-type" href="#">по типу</a></li>
-                  <li class="sorting-item"><a class="sorting-link sorting-link-by-functions" href="#">по функционалу</a></li>
-                  <li class="sorting-item sort-item-current">
-                    <a class="arrow sorting-link-arrowup sorting-link-current" href="/catalog.html?ordered=desc"><span class="visually-hidden">Сортировать по возрастанию</span></a>
-                  </li>
-                  <li class="sorting-item">
-                    <a class="arrow sorting-link-arrodown" href="/catalog.html?ordered=asc"><span class="visually-hidden">Сортировать по убыванию</span></a>
-                  </li>
-                </ul>
-              </p>
+              <ul class="sorting-list">
+                <li class="sorting-item sort-item-current"><a class="sorting-link sorting-link-current sorting-link-by-price" href="#">по цене</a></li>
+                <li class="sorting-item"><a class="sorting-link sorting-link-by-type" href="#">по типу</a></li>
+                <li class="sorting-item"><a class="sorting-link sorting-link-by-functions" href="#">по функционалу</a></li>
+                <li class="sorting-item sort-item-current">
+                  <a class="arrow sorting-link-arrowup sorting-link-current" href="/catalog.html?ordered=desc"><span class="visually-hidden">Сортировать по возрастанию</span></a>
+                </li>
+                <li class="sorting-item">
+                  <a class="arrow sorting-link-arrodown" href="/catalog.html?ordered=asc"><span class="visually-hidden">Сортировать по убыванию</span></a>
+                </li>
+              </ul>
             </section>
 
             <section class="сatalog">
@@ -349,12 +347,10 @@
           <h2 class="about-product-title">Пара слов о перфораторах</h2>
 
           <p class="about-product-p">
-            <p class="about-product-p">
-              Перфоратор &#8211; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
-            </p>
-            <p class="about-product-p">
-              Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
-            </p>
+            Перфоратор &#8211; универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+          </p>
+          <p class="about-product-p">
+            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.
           </p>
         </div>
       </section>
@@ -403,7 +399,7 @@
             <h2 class="visually-hidden">Секция с копирайтом, сылками на соцсети и обратная связь</h2>
 
             <p class="copyright" aria-label="copyright">
-              &#169 2010&#8211;2017 Компания &#171Техномарт&#187
+              &#169; 2010&#8211;2017 Компания &#171;Техномарт&#187;
               Все права защищены.
             </p>
 
@@ -460,7 +456,7 @@
           </div>
           <p class="order-info-buttons">
             <a class="button order-info-btn-issueorder" href="issueorder.html">Оформить заказ</a>
-            <a name="continuetobay" class="button order-info-btn-continue">Продолжить покупки</a>
+            <a class="button order-info-btn-continue" href="countinue.html">Продолжить покупки</a>
           </p>
 
           <button type="button" name="btn-close" class="button-close order-info-btn-close"><span class="visually-hidden">Закрыть</span></button>
