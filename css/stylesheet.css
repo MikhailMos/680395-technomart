@@ -1,4 +1,4 @@
-@keyframes _animationMap {
+@keyframes _animationPopup {
   0% {
     transform: scale(0);
     opacity: 0;
@@ -397,13 +397,13 @@ a {
   justify-content: space-between;
 }
 
-.main-header-middle-descriptoin,
+/* .main-header-middle-descriptoin,
 .main-header-middle-info,
 .user-navigation {
-  /* временные границы */
+  /* временные границы
   background-color: rgba(192, 127, 15, 0.2);
   box-shadow: 0 0 2px rgba(47, 228, 23, 0.548);
-}
+} */
 
 .main-header-middle-tel {
   margin: 0;
@@ -450,8 +450,8 @@ a {
   flex-wrap: wrap;
 
   /* временные границы */
-  background-color: rgba(192, 127, 15, 0.2);
-  box-shadow: 0 0 2px rgba(47, 228, 23, 0.548);
+  /* background-color: rgba(192, 127, 15, 0.2);
+  box-shadow: 0 0 2px rgba(47, 228, 23, 0.548); */
 }
 
 .user-general-panel {
@@ -798,7 +798,7 @@ a {
   right: 0px;
 
   overflow: hidden;
-  z-index: 10;
+  z-index: 3;
 }
 
 .flag-new {
@@ -1132,7 +1132,7 @@ a {
   right: -1px;
 
   overflow: hidden;
-  z-index: 20;
+  z-index: 3;
 }
 
 
@@ -1146,20 +1146,14 @@ a {
   padding: 40px 0;
 
   background-color: rgba(255, 255, 255, 1);
-  z-index: 10;
-}
-
-.goods-item-link {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column-reverse;
-
-  margin-top: 5px;
+  z-index: 1;
 }
 
 .goods-item-picture {
   max-width: 100%;
   margin-bottom: 35px;
+
+  order: -1;
 }
 
 .goods-item-card .goods-item-title {
@@ -1610,9 +1604,13 @@ a {
   padding-right: 65px;
 }
 
-.contacts-map-picture {
-  /* width: 100%; */
+.contacts-map-link {
+  display: block;
   margin-bottom: 20px;
+}
+
+.contacts-map-picture {
+  display: block;
 }
 
 .contacts-btn {
@@ -2277,7 +2275,7 @@ a {
   display: none;
   position: fixed;
 
-  z-index: 90; /*чтоб на модалках не появлялись разные слои*/
+  z-index: 3; /*чтоб на модалках не появлялись разные слои*/
 }
 
 .modal-show {
@@ -2317,7 +2315,7 @@ a {
   height: 446px;
   box-shadow: 0 0 16px 8px rgba(47, 42, 43, 0.5);
 
-  animation-name: _animationMap;
+  animation-name: _animationPopup;
   animation-duration: 0.8s;
   animation-timing-function: easy-out;
 }
@@ -2353,7 +2351,7 @@ a {
   font-size: 18px;
   line-height: 18px;
   color: #000000;
-  background-color: #ffffff;
+
 }
 
 .write-us-form {
@@ -2362,11 +2360,11 @@ a {
   padding-top: 45px;
   width: 620px;
 
-
+  background-color: #ffffff;
   border-top: 7px solid #ff5357;
   box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
 
-  animation-name: _animationMap;
+  animation-name: _animationPopup;
   animation-duration: 0.8s;
   animation-timing-function: easy-out;
 }
@@ -2448,6 +2446,10 @@ a {
 
   box-shadow: inset 0px 7px 0 0 #e33643,
               0px 20px 40px 0 rgba(41, 52, 73, 0.75);
+
+  animation-name: _animationPopup;
+  animation-duration: 0.8s;
+  animation-timing-function: easy-out;
 }
 
 .order-info-form {
