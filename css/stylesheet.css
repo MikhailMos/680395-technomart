@@ -2348,7 +2348,6 @@ a {
 
   animation-name: _animationPopup;
   animation-duration: 0.8s;
-  animation-timing-function: easy-out;
 }
 
 .form-wrapper {
