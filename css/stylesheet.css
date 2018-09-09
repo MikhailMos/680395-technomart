@@ -2168,6 +2168,11 @@ a {
   opacity: 0.3;
 }
 
+.sorting-link-arrodown:hover,
+.sorting-link-arrodown:hover::before {
+  opacity: 1;
+}
+
 .sorting-link-current {
   color: #ee3643;
   opacity: 1;
