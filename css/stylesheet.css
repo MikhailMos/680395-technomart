@@ -1320,10 +1320,11 @@ a {
 
 .services {
   margin-bottom: 54px;
-  margin-left: 162px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 40px;
 
-  width: 950px;
+  width: 940px;
 
   color: #000000;
   background-color: #f4f8fa;
@@ -1474,7 +1475,7 @@ a {
   background-color: inherit;
   background-image: url("../img/background-warranty.png");
   background-repeat: no-repeat;
-  background-position: 239px 3px;
+  background-position: 229px 3px;
 }
 
 .sublist-item-credit {
@@ -2029,6 +2030,13 @@ a {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
+.filter-input-checkbox:disabled + .filter-checkbox-label,
+.filter-input-checkbox:disabled + .filter-checkbox-label::before,
+.filter-input-radio:disabled + .filter-label-radio,
+.filter-input-radio:disabled + .filter-label-radio::before {
+  opacity: 0.4;
+}
+
 .btn-show {
   font: inherit;
 
@@ -2125,6 +2133,19 @@ a {
   border: 10px solid #ee3643;
   border-left-width: 5px;
   border-right-width: 5px;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.arrow:hover::before,
+.arrow:focus::before {
+  border-color: #000000;
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.arrow:active::before {
+  border-color: #ee3643;
   border-left-color: transparent;
   border-right-color: transparent;
 }
