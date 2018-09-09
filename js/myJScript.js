@@ -108,7 +108,11 @@ if (popupInfoBuy) {
 // Обработка клавиши Esc
 function pressESC(evt) {
   if (evt.keyCode === ESC_KEY_CODE) {
-    document.querySelector("modal-show").classList.remove("modal-show");
+    document.querySelector(".modal-show").classList.remove("modal-show");
+    // var closeFormToESC = document.querySelector(".modal-show") ? document.querySelector(".modal-show") : "";
+    // if (closeFormToESC) {
+    //   closeFormToESC.classList.remove("modal-show");
+    // }
   }
 }
 

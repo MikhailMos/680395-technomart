@@ -130,8 +130,8 @@
               </a>
 
               <p class="slider-indicator-list" aria-label="Переключение по слайдам">
-                <input type="radio" name="slider-indicator" value="slide1" aria-label="Слайд 1">
-                <input type="radio" name="slider-indicator" value="slide2" aria-label="Слайд 2" checked>
+                <input type="radio" class="slider-radio" name="slider-indicator" value="slide1" aria-label="Слайд 1">
+                <input type="radio" class="slider-radio" name="slider-indicator" value="slide2" aria-label="Слайд 2" checked>
               </p>
             </li>
           </ul>
@@ -251,7 +251,6 @@
       </div>
 
       <div class="services-wrapper">
-        <div class="container">
 
           <section class="services">
             <h2 class="services-title">Сервисы</h2>
@@ -274,19 +273,26 @@
               <ul class="service-sublist" aria-label="Описание сервисов">
                 <li class="service-sublist-item sublist-item-delivery">
                   <h3 class="sublist-item-title">Доставка</h3>
-                  <p class="service-sublist-item-p">
-                    Мы с удовольтвием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                  <p class="service-sublist-item-p1">
+                    Мы с удовольтвием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                  </p>
+                  <p class="service-sublist-item-p2">
+                    Ведь мы неплохо заработаем, поднимая его на ваш этаж!
                   </p>
                 </li>
                 <li class="service-sublist-item sublist-item-warranty">
                   <h3 class="sublist-item-title">Гарантия</h3>
-                  <p class="service-sublist-item-p">Если купленный у нас товар пломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.<br>
-                    Дом уж восстановите сами.
+                  <p class="service-sublist-item-p">
+                    Если купленный у нас товар пломается или заискрит,<br>
+                    а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                  </p>
+                  <p class="service-sublist-item-p">
+                    Дом уж восстановите как-нибудь сами.
                   </p>
                 </li>
                 <li class="service-sublist-item sublist-item-credit">
                   <h3 class="sublist-item-title">Кредит</h3>
-                  <p class="service-sublist-item-p">Залезть в дологовую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                  <p class="service-sublist-item-p3">Залезть в дологовую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                   <a class="button btn-credit" href="creditapplication.html">Отправить нам заявку</a>
                 </li>
               </ul>
@@ -294,7 +300,6 @@
             </div>
           </section>
 
-        </div>
       </div>
 
       <div class="container">
@@ -414,15 +419,15 @@
           <div class="form-wrapper">
             <p class="write-us-user">
               <label class="write-us-name" for="userNameField">Ваше имя:</label>
-              <input type="text" name="userName" id="userNameField" class="write-us-input" placeholder="Ваше имя">
+              <input type="text" name="userName" id="userNameField" class="write-us-input" placeholder="Имя Фамилия">
             </p>
             <p class="write-us-email">
               <label class="write-us-email" for="userEmailField">Ваш e-mail:</label>
-              <input type="email" name="userEmail" id="userEmailField" class="write-us-input" placeholder="Ваш e-mail">
+              <input type="email" name="userEmail" id="userEmailField" class="write-us-input" placeholder="email@example.com">
             </p>
             <p class="write-us-text">
               <label class="write-us-letter" for="letterField">Текст письма:</label>
-              <textarea name="content-of-letter" class="text-of-letter" id="letterField" cols="47" rows="8" placeholder="В свободной форме"></textarea>
+              <textarea name="content-of-letter" class="text-of-letter" id="letterField" cols="50" rows="5" placeholder="В свободной форме"></textarea>
             </p>
           </div>
 
