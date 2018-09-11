@@ -110,6 +110,7 @@
                     Соседям на радость!
                   </p>
                   <img class="promo-slider-picture slide-1" src="img/slaid1.jpg" width="620" height="266" alt="Дрели">
+                  <a class="button promo-slider-btn-open" href="catalog.html">Открыть каталог</a>
                 </li>
                 <li class="promo-slider-item">
                   <h4 class="promo-slider-header">Перфораторы</h4>
@@ -117,10 +118,10 @@
                     Настоящие мужские игрушки
                   </p>
                   <img class="promo-slider-picture slide-2" src="img/slaid2.jpg " width="620" height="266" alt="Перфораторы">
+                  <a class="button promo-slider-btn-open" href="catalog.html">Открыть каталог</a>
                 </li>
               </ul>
 
-              <a class="button promo-slider-btn-open" href="catalog.html">Открыть каталог</a>
               <!--управление слайдером-->
               <a class="slider-control promo-slider-btnleft" href="#mySlider" role="button" aria-label="Показать предыдущий слайд">
                 <span class="visually-hidden">Влево</span>
@@ -129,10 +130,11 @@
                 <span class="visually-hidden">Вправо</span>
               </a>
 
-              <p class="slider-indicator-list" aria-label="Переключение по слайдам">
-                <input type="radio" class="slider-radio" name="slider-indicator" value="slide1" aria-label="Слайд 1">
-                <input type="radio" class="slider-radio" name="slider-indicator" value="slide2" aria-label="Слайд 2" checked>
-              </p>
+              <ul class="slider-indicator-list" aria-label="Переключение по слайдам">
+                <li class="slider-radio"><span class="visually-hidden">Слайд 1"</span></li>
+                <li class="slider-radio slider-radio-current"><span class="visually-hidden">Слайд 2"</span></li>
+              </ul>
+
             </li>
           </ul>
 
@@ -274,10 +276,9 @@
                 <li class="service-sublist-item sublist-item-delivery">
                   <h3 class="sublist-item-title">Доставка</h3>
                   <p class="service-sublist-item-p1">
-                    Мы с удовольтвием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                  </p>
-                  <p class="service-sublist-item-p2">
-                    Ведь мы неплохо заработаем, поднимая его на ваш этаж!
+                    Мы с удовольтвием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!<br>
+                    Ведь мы неплохо заработаем,<br>
+                    поднимая его на ваш этаж!
                   </p>
                 </li>
                 <li class="service-sublist-item sublist-item-warranty">
@@ -292,7 +293,7 @@
                 </li>
                 <li class="service-sublist-item sublist-item-credit">
                   <h3 class="sublist-item-title">Кредит</h3>
-                  <p class="service-sublist-item-p3">Залезть в дологовую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                  <p class="service-sublist-item-p2">Залезть в дологовую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
                   <a class="button btn-credit" href="creditapplication.html">Отправить нам заявку</a>
                 </li>
               </ul>
@@ -327,7 +328,7 @@
           <section class="contacts">
             <h2 class="contacts-title">Контакты</h2>
             <p class="contacts-p">Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a class="contacts-map-link" href="contacts.html" aria-label="Карта с указанным маршрутом"><img class="contacts-map-picture" src="img/map-mini.jpg" width="300" height="158" alt="Карта"></a>
+            <a class="contacts-map-link" href="https://yandex.ru/maps/-/CBBefTeMSD" aria-label="Карта с указанным маршрутом"><img class="contacts-map-picture" src="img/map-mini.jpg" width="300" height="158" alt="Карта"></a>
             <p class="contacts-p-btn">
               <a class="button contacts-btn" href="feedback.html">Заблудились? Напишите нам!</a>
             </p>
@@ -401,63 +402,59 @@
 
     </footer>
 
-    <div class="container">
+    <section class="modal modal-fullmap">
+      <h2 class="visually-hidden">Полная карта</h2>
+      <div class="fullmap-form">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CBB4M0fvhA" class="fullmap-iframe" width="940" height="446"></iframe>
+        <img class="fullmap-picture" src="img/map-big.jpg" width="940" height="446" alt="Полная карта с указанием адреса: ул. Большаяя Конюшенная 19">
+        <button type="button" name="btn-close" class="button-close fullmap-btn-close"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </section>
 
-      <section class="modal modal-fullmap">
-        <h2 class="visually-hidden">Полная карта</h2>
-        <div class="fullmap-form">
-          <iframe src="https://yandex.ru/map-widget/v1/-/CBB4M0fvhA" class="fullmap-iframe" width="940" height="446"></iframe>
-          <img class="fullmap-picture" src="img/map-big.jpg" width="940" height="446" alt="Полная карта с указанием адреса: ул. Большаяя Конюшенная 19">
-          <button type="button" name="btn-close" class="button-close fullmap-btn-close"><span class="visually-hidden">Закрыть</span></button>
-        </div>
-      </section>
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
 
-      <section class="modal modal-write-us">
-        <h2 class="visually-hidden">Форма обратной связи</h2>
-
-        <form class="write-us-form" method="POST" action="https://echo.htmlacademy.ru">
-          <div class="form-wrapper">
-            <p class="write-us-user">
-              <label class="write-us-name" for="userNameField">Ваше имя:</label>
-              <input type="text" name="userName" id="userNameField" class="write-us-input" placeholder="Имя Фамилия">
-            </p>
-            <p class="write-us-email">
-              <label class="write-us-email" for="userEmailField">Ваш e-mail:</label>
-              <input type="email" name="userEmail" id="userEmailField" class="write-us-input" placeholder="email@example.com">
-            </p>
-            <p class="write-us-text">
-              <label class="write-us-letter" for="letterField">Текст письма:</label>
-              <textarea name="content-of-letter" class="text-of-letter" id="letterField" cols="50" rows="5" placeholder="В свободной форме"></textarea>
-            </p>
-          </div>
-
-          <p class="btn-wrapper">
-            <button type="submit" name="btn-send" class="button write-us-btn-send">Отправить</button>
+      <form class="write-us-form" method="POST" action="https://echo.htmlacademy.ru">
+        <div class="form-wrapper">
+          <p class="write-us-user">
+            <label class="write-us-name" for="userNameField">Ваше имя:</label>
+            <input type="text" name="userName" id="userNameField" class="write-us-input" placeholder="Имя Фамилия">
           </p>
-
-          <button type="button" name="btn-close" class="button-close write-us-btn-close"><span class="visually-hidden">Закрыть</span></button>
-        </form>
-
-      </section>
-
-      <section class="modal modal-order-info">
-        <div class="order-info-form">
-          <div class="order-info-wrapper">
-            <h2 class="visually-hidden">Информация о заказе</h2>
-            <p class="order-info-p">
-              Товар добавлен в корзину!
-            </p>
-          </div>
-          <p class="order-info-buttons">
-            <a class="button order-info-btn-issueorder" href="issueorder.html">Оформить заказ</a>
-            <a class="button order-info-btn-continue" href="countinue.html">Продолжить покупки</a>
+          <p class="write-us-email">
+            <label class="write-us-email" for="userEmailField">Ваш e-mail:</label>
+            <input type="email" name="userEmail" id="userEmailField" class="write-us-input" placeholder="email@example.com">
           </p>
-
-          <button type="button" name="btn-close" class="button-close order-info-btn-close"><span class="visually-hidden">Закрыть</span></button>
+          <p class="write-us-text">
+            <label class="write-us-letter" for="letterField">Текст письма:</label>
+            <textarea name="content-of-letter" class="text-of-letter" id="letterField" cols="50" rows="5" placeholder="В свободной форме"></textarea>
+          </p>
         </div>
-      </section>
 
-    </div>
+        <p class="btn-wrapper">
+          <button type="submit" name="btn-send" class="button write-us-btn-send">Отправить</button>
+        </p>
+
+        <button type="button" name="btn-close" class="button-close write-us-btn-close"><span class="visually-hidden">Закрыть</span></button>
+      </form>
+
+    </section>
+
+    <section class="modal modal-order-info">
+      <div class="order-info-form">
+        <div class="order-info-wrapper">
+          <h2 class="visually-hidden">Информация о заказе</h2>
+          <p class="order-info-p">
+            Товар добавлен в корзину!
+          </p>
+        </div>
+        <p class="order-info-buttons">
+          <a class="button order-info-btn-issueorder" href="issueorder.html">Оформить заказ</a>
+          <a class="button order-info-btn-continue" href="countinue.html">Продолжить покупки</a>
+        </p>
+
+        <button type="button" name="btn-close" class="button-close order-info-btn-close"><span class="visually-hidden">Закрыть</span></button>
+      </div>
+    </section>
 
     <script src="js/myJScript.js"></script>
   </body>
